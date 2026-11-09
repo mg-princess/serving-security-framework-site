@@ -346,7 +346,11 @@ function readerHydrateCheck(details){
  const id=details.dataset.checkId,c=readerChecks.get(id);if(!c)return;
  let template=readerCheckTemplates.get(id);
  if(!template){template=document.createElement('template');const holder=readerDocBox(c.html),record=holder.firstElementChild;record.querySelector(':scope > summary')?.remove();readerFormatCheck(record);record.querySelectorAll('details.conditional-subtest').forEach(readerFormatCheck);template.innerHTML=record.innerHTML;readerCheckTemplates.set(id,template);}
- const fragment=template.content.cloneNode(true),prefix=details.id+'-';fragment.querySelectorAll('[id]').forEach(n=>{n.dataset.sourceId=n.dataset.sourceId||n.id;n.id=prefix+n.id;});details.querySelector('.guide-check-body').append(fragment);details.dataset.loaded='true';readerMarkImportant(details.querySelector('.guide-check-body'),2);
+ const fragment=template.content.cloneNode(true),prefix=details.id+'-';
+ const mapAction=(checkId)=>{const p=document.createElement('p');p.className='check-map-actions';const a=document.createElement('a');a.href=readerUrl('map',{map:checkId});a.textContent='지도에서 보기';a.dataset.mapCheck=checkId;p.append(a);return p;};
+ fragment.prepend(mapAction(id));
+ for(const at of fragment.querySelectorAll('[id^="CHK-"]')){const nested=at.closest('details.conditional-subtest');if(nested&&at.id!==id&&!nested.querySelector('[data-map-check]'))nested.querySelector('summary').after(mapAction(at.id));}
+ fragment.querySelectorAll('[id]').forEach(n=>{n.dataset.sourceId=n.dataset.sourceId||n.id;n.id=prefix+n.id;});details.querySelector('.guide-check-body').append(fragment);details.dataset.loaded='true';readerMarkImportant(details.querySelector('.guide-check-body'),2);
 }
 document.addEventListener('toggle',e=>{if(e.target.matches?.('.guide-check[open]'))readerHydrateCheck(e.target);},true);
 document.addEventListener('click',e=>{const summary=e.target.closest('.guide-check > summary');if(summary)readerHydrateCheck(summary.parentElement);});
@@ -373,4 +377,17 @@ function readerFieldApplication(f){
  const exampleStage=[3,2,1,5,7,4,5,4][f.n-1];
  return '<h2 id="field-application">적용 방법</h2><div class="guide-role-table"><table><thead><tr><th scope="col">담당자</th><th scope="col">수행할 일</th></tr></thead><tbody>'+model.roles.map(r=>'<tr><td data-label="담당자">'+esc(r.role)+'</td><td data-label="수행할 일">'+esc(r.action)+'<p><a href="#doc='+encodeURIComponent(readerFiles.six)+'&anchor='+esc(r.anchor)+'">'+esc(r.label)+'</a></p></td></tr>').join('')+'</tbody></table></div><p>'+readerLink('guide',{stage:exampleStage,anchor:'stage-example'},readerStages[exampleStage-1]+' 적용 사례 보기')+'</p><a id="field-related-checks"></a>'+readerWorkflowChecklist([...readerChecks.values()].filter(c=>c.field===f.n).map(c=>({id:c.id})),'field-'+f.n)+'<h2 id="field-environments">설정·환경별 세부 실행 방법</h2>'+f.html;
 }
-</script></html>
+</script>
+<script>
+// Serve the current reader's checklist body; the map holds no second copy of criteria.
+window.addEventListener('message',e=>{
+ const frame=document.querySelector('#embedded-threat-frame'),m=e.data;
+ if(!frame||e.source!==frame.contentWindow||m?.type!=='bbls-explorer:criteria-request'||!readerChecks.has(m.id)||typeof m.requestId!=='string'||m.requestId.length>100)return;
+ const host=document.createElement('details');host.className='guide-check';host.id='map-criteria-'+m.id+'-'+m.requestId.replace(/[^\w-]/g,'');host.dataset.checkId=m.id;
+ const body=document.createElement('div');body.className='guide-check-body';host.append(body);readerHydrateCheck(host);
+ body.querySelectorAll('.check-map-actions').forEach(n=>n.remove());
+ frame.contentWindow.postMessage({type:'bbls-explorer:criteria',id:m.id,requestId:m.requestId,html:body.innerHTML},'*');
+});
+
+</script>
+</html>
