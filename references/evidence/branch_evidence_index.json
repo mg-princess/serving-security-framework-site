@@ -1,0 +1,4422 @@
+{
+  "schema": "FRAMEWORK_BRANCH_EVIDENCE_INDEX_V1",
+  "scope": "기존 보관 결과를 현재 적용 분기에 연결한 로컬 원장",
+  "new_engine_trials": 0,
+  "new_pr_reviewed": false,
+  "current_check_accepted_count": 0,
+  "notes": [
+    "원래 판정은 원문과 함께 보존한다. 부분 결과와 관련 관측은 현재 CHK의 충족 판정과 각각 구분한다.",
+    "GPU 원 EVD·ENV·POL·RPT 묶음의 독립 인수는 완료하지 않았다.",
+    "문서의 엔진 선택은 실행 안내를 고른다. 아래 이력은 각 원문의 엔진·판본·정책·실행 환경에만 해당한다."
+  ],
+  "sources": [
+    {
+      "file": "automation-hardening-20261024.json",
+      "sha256": "db534b0a00daa862b3b37a1bce5220175e231829fdc47cd2908ad426534b56db",
+      "url": "references/evidence/automation-hardening-20261024.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/automation-hardening-20261024.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "db534b0a00daa862b3b37a1bce5220175e231829fdc47cd2908ad426534b56db"
+    },
+    {
+      "file": "automation-phase1-20261023.json",
+      "sha256": "06b182e66962bf14d7158900be568c37e027ac6f83b64c3b974dc6440ed04522",
+      "url": "references/evidence/automation-phase1-20261023.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/automation-phase1-20261023.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "06b182e66962bf14d7158900be568c37e027ac6f83b64c3b974dc6440ed04522"
+    },
+    {
+      "file": "automation-phase2-20261023.json",
+      "sha256": "030b1ce89b0877bc1486fca7547bc35c1ad31c0c7fa504e2f0c07583fb0209e9",
+      "url": "references/evidence/automation-phase2-20261023.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/automation-phase2-20261023.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "030b1ce89b0877bc1486fca7547bc35c1ad31c0c7fa504e2f0c07583fb0209e9"
+    },
+    {
+      "file": "automation-phase3-20261023.json",
+      "sha256": "b65b4742cdc94e374f84515ccc4db4a7e0e5aa5a464e14253ced0ef6a4d9791a",
+      "url": "references/evidence/automation-phase3-20261023.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/automation-phase3-20261023.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "b65b4742cdc94e374f84515ccc4db4a7e0e5aa5a464e14253ced0ef6a4d9791a"
+    },
+    {
+      "file": "dev1-p1-v2-gpu-20261105.json",
+      "sha256": "0ee2f10fa9a3b64df3e4e30384766628c07429096f737580dbea59c018f444c1",
+      "url": "references/evidence/dev1-p1-v2-gpu-20261105.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/dev1-p1-v2-gpu-20261105.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "0ee2f10fa9a3b64df3e4e30384766628c07429096f737580dbea59c018f444c1"
+    },
+    {
+      "file": "dev1-p2-runner-cpu-20261105.json",
+      "sha256": "5b360f54c325ee844f5eb5cde77c50d0ff64f0b773b520af06d0c69b9e223cea",
+      "url": "references/evidence/dev1-p2-runner-cpu-20261105.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/dev1-p2-runner-cpu-20261105.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "5b360f54c325ee844f5eb5cde77c50d0ff64f0b773b520af06d0c69b9e223cea"
+    },
+    {
+      "file": "engine-callback-cpu-20261102.json",
+      "sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+      "url": "references/evidence/engine-callback-cpu-20261102.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/engine-callback-cpu-20261102.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe"
+    },
+    {
+      "file": "framework-sync-20261026.json",
+      "sha256": "2a37415a40d38a7b8e9a94f57b806eb1f008df6aeb055abaa926276ff6bf645f",
+      "url": "references/evidence/framework-sync-20261026.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/framework-sync-20261026.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "2a37415a40d38a7b8e9a94f57b806eb1f008df6aeb055abaa926276ff6bf645f"
+    },
+    {
+      "file": "gpu-a-LIF-13-20261103.json",
+      "sha256": "82010e78dccf78fa350eeb1856f6e7d63b02edcf1440a41de080efb5b0a5ab6d",
+      "url": "references/evidence/gpu-a-LIF-13-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-LIF-13-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "d7544d945ed6adb4d421eaca4d791660bd369622ac31eb188ea8202037bb0fa2"
+    },
+    {
+      "file": "gpu-a-REQ-08-20261103.json",
+      "sha256": "6a90c3c138755f85e7af0d03508647e7bf3421831e7cfbc6fbeaef81858a1e4c",
+      "url": "references/evidence/gpu-a-REQ-08-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-08-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "0c72149e46d4fb280ba668964472f611d8ffae668377fcd7d3fe9ac8155fd92a"
+    },
+    {
+      "file": "gpu-a-REQ-09-20261103.json",
+      "sha256": "b1ff0680847d005b6fefa932570010d6ad5a3d9a22ca4316f55cb1d2ec2e121b",
+      "url": "references/evidence/gpu-a-REQ-09-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-09-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "624f9c128e931d3e8cafd2b76e67f0a0acf015c6d65fb74af586beb02f9e12b7"
+    },
+    {
+      "file": "gpu-a-REQ-10-20261103.json",
+      "sha256": "635469bb7ca0a359afeea4b0a296c178b25d51e3f35a451dd0a1cb9cc70f2507",
+      "url": "references/evidence/gpu-a-REQ-10-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-10-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "f6c3a572391c6a9fd1d86ac870aa715ac1c359de18d645a9feede14b034d953a"
+    },
+    {
+      "file": "gpu-a-REQ-14-20261103.json",
+      "sha256": "2cdb47485cf483bc52a95f8107f495a30570cab58488281c96c748c01497e4ed",
+      "url": "references/evidence/gpu-a-REQ-14-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-14-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "d69b76d059d569a4c79ac75b053e068a20527d3aaa9d2f0320c36aae5482b838"
+    },
+    {
+      "file": "gpu-a-REQ-16-20261103.json",
+      "sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+      "url": "references/evidence/gpu-a-REQ-16-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-16-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "5cbecb37cbcc878374ad19e01fa42d9f45f06cdd373c7d1c0afa2b385f7694a2"
+    },
+    {
+      "file": "gpu-a-REQ-17-20261103.json",
+      "sha256": "766b5d0872b69fafa25186f391e2bf516355d757a54a78b3de12e2c820821f7f",
+      "url": "references/evidence/gpu-a-REQ-17-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-17-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "98484f7a037a2b1d5e6e1e130416136d577d0dafa05f375eae565b810e2da82c"
+    },
+    {
+      "file": "gpu-a-REQ-18-20261103.json",
+      "sha256": "f549fdcf1e5ab5f2137a431b07859a86d27872cf989f4b8163250e6005ca5a73",
+      "url": "references/evidence/gpu-a-REQ-18-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-18-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "f11ed1153cec5791668c36e937f1e5b1d394ad541f92578aeef2972626368a52"
+    },
+    {
+      "file": "gpu-a-REQ-19-20261103.json",
+      "sha256": "f6882443406145d03e61b8767cf5d0cdb66d9f2d96c2689498d522c7ee77ee77",
+      "url": "references/evidence/gpu-a-REQ-19-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-19-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "571126f84adbea9af246679b9ac43c4381d0b2b818038198d0f80e558077fe41"
+    },
+    {
+      "file": "gpu-a-REQ-20-20261103.json",
+      "sha256": "76a115dd39eb3bea87dc12c6923f0952db04e2bb63eff1a3e708b5cc5ae8ba7e",
+      "url": "references/evidence/gpu-a-REQ-20-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-20-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "a422b5e1c6ed5efae455f5c09d2556a247f9d11345bc9de7719510da01574314"
+    },
+    {
+      "file": "gpu-a-REQ-21-20261103.json",
+      "sha256": "c3fb7aaf87d10eacd45f49fdb3cabb4fe48031466726d63c2ef5886616843350",
+      "url": "references/evidence/gpu-a-REQ-21-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-REQ-21-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "557864f83b800111e934b14b718d9c1c5f4b162e618383eeb01a21ffc3f5d94a"
+    },
+    {
+      "file": "gpu-a-SUP-03-20261103.json",
+      "sha256": "ea3a67c0518ed776d00bae6533e711ee016eaef12124bc5c0e9041eadce40c98",
+      "url": "references/evidence/gpu-a-SUP-03-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-SUP-03-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "47c078cadf1698d8066bc517855458ef44b0646bd102d5aee5c919d9584cab4f"
+    },
+    {
+      "file": "gpu-a-SUP-08-20261103.json",
+      "sha256": "870f35827208ea3e5a999af6000feefafbe8888c35337ccb9c3e6ecdb9777c6d",
+      "url": "references/evidence/gpu-a-SUP-08-20261103.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-SUP-08-20261103.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "ce53d2b172daa540d64487b84ae1a3df65679b8169e90dd5286ec2341c7b2b87"
+    },
+    {
+      "file": "gpu-a-dev1-phase2-20261105.json",
+      "sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+      "url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-dev1-phase2-20261105.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff"
+    },
+    {
+      "file": "gpu-a-dev1-phase2-20261106.json",
+      "sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e",
+      "url": "references/evidence/gpu-a-dev1-phase2-20261106.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-a-dev1-phase2-20261106.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e"
+    },
+    {
+      "file": "gpu-b-phase1-status-20261105.json",
+      "sha256": "5bc828d06f15c023dae56043d1d8b0c4a6123298179de5eed290da2e11d2726e",
+      "url": "references/evidence/gpu-b-phase1-status-20261105.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/gpu-b-phase1-status-20261105.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "5bc828d06f15c023dae56043d1d8b0c4a6123298179de5eed290da2e11d2726e"
+    },
+    {
+      "file": "lab-activation-cpu-20261102.json",
+      "sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+      "url": "references/evidence/lab-activation-cpu-20261102.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/lab-activation-cpu-20261102.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd"
+    },
+    {
+      "file": "policy-reliability-20261024.json",
+      "sha256": "a732b6ca9dfb91fe897690e8ea03a289871865226ca5593fed5d39a081f6766f",
+      "url": "references/evidence/policy-reliability-20261024.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/policy-reliability-20261024.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "a732b6ca9dfb91fe897690e8ea03a289871865226ca5593fed5d39a081f6766f"
+    },
+    {
+      "file": "sup08-code-selection-20261111.json",
+      "sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+      "url": "references/evidence/sup08-code-selection-20261111.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/sup08-code-selection-20261111.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540"
+    },
+    {
+      "file": "update-validation-20261024.json",
+      "sha256": "0f9fbd5e298e70fc27588d2b92155f59707fc8bb29dbc511d9a4945e811768cd",
+      "url": "references/evidence/update-validation-20261024.json",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/update/docs/evidence/update-validation-20261024.json",
+      "kind": "기존 시험 요약",
+      "published_sha256": "0f9fbd5e298e70fc27588d2b92155f59707fc8bb29dbc511d9a4945e811768cd"
+    },
+    {
+      "file": "AWS_GPU_서버2회차_결과_20261104.md",
+      "sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+      "url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/runtime/docs/AWS_GPU_%EC%84%9C%EB%B2%842%ED%9A%8C%EC%B0%A8_%EA%B2%B0%EA%B3%BC_20261104.md",
+      "kind": "런타임 보고",
+      "published_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b"
+    },
+    {
+      "file": "AWS_GPU_서버16회차_결과_20261111.md",
+      "sha256": "5ab9a325ec74d242172a59617bdffa362893074a6036f131bee1ecf0b57c5b92",
+      "url": "references/evidence/AWS_GPU_서버16회차_결과_20261111.md",
+      "original_path": "https://github.com/dohashelby/byul/blob/9fec56a6c0a4e849863cb08e2ac818d09317a06b/runtime/docs/AWS_GPU_%EC%84%9C%EB%B2%8416%ED%9A%8C%EC%B0%A8_%EA%B2%B0%EA%B3%BC_20261111.md",
+      "kind": "런타임 보고",
+      "published_sha256": "5ab9a325ec74d242172a59617bdffa362893074a6036f131bee1ecf0b57c5b92"
+    }
+  ],
+  "branches": [
+    {
+      "check_id": "CHK-LIF-001",
+      "branch_index": 0,
+      "name": "대형·오류 공급물로 모델 준비 자원 고갈",
+      "apply_when": "선정 취득·해석·변환·compile·적재 단계가 실행된다. compile 실제 활성 여부를 조사한다.",
+      "branch_sha256": "d205f1e638828a6bfd5049169426bb5b6dc8603ae56e6e6b03b17ea7fd889c84",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-002",
+      "branch_index": 0,
+      "name": "재시도·부분 파일 누적으로 준비 비용 초과",
+      "apply_when": "원격 취득 또는 취득 SDK의 retry가 사용된다.",
+      "branch_sha256": "f00ef25e7c343253e81d9fe7cf83fe48565040d1029e80b3a711db995699ee3d",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-003",
+      "branch_index": 0,
+      "name": "입력·생성 개수 조합으로 자원 고갈",
+      "apply_when": "기본 요청 길이·출력·동시성 비용을 확인하며 metadata·child·priority는 수용할 때 추가한다.",
+      "branch_sha256": "56ab5f083ac12442770d4b998f9951499f0905b216d1354f9874b63d3428f32f",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/0",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU에서 4개 텍스트 요청과 RSS, 정상 요청을 관측했다.",
+          "remaining_scope": "채택한 자원 상한·접수 제한과 초과 요청 거부, CPU/GPU 자원의 반환을 추가 확인해야 한다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/0/activation_scope_complete",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-03",
+          "relationship": "관련 관측",
+          "observed_scope": "출력 한도 적용을 관측했다.",
+          "remaining_scope": "요청 수·동시성·누적 비용의 예산 집행과 해제를 추가 확인해야 한다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "채택한 자원 상한·접수 제한과 초과 요청 거부, CPU/GPU 자원의 반환을 추가 확인해야 한다. 요청 수·동시성·누적 비용의 예산 집행과 해제를 추가 확인해야 한다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-003",
+      "branch_index": 1,
+      "name": "요청·우선순위 독점으로 다른 사용자 서비스 방해",
+      "apply_when": "공유 scheduler·KV·대기열에서 요청의 자원 배분·공정성을 확인한다.",
+      "branch_sha256": "55ff1bd47dd3a4d58db1fc3fe8e0f2fbd84acf6d336ceac65355020d8c227139",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/0",
+          "relationship": "관련 관측",
+          "observed_scope": "동시 부하 중 정상 요청 처리 기록이 있다.",
+          "remaining_scope": "다른 주체의 요청·우선순위 독점과 공정성은 시험하지 않았다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/0/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "다른 주체의 요청·우선순위 독점과 공정성은 시험하지 않았다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-003",
+      "branch_index": 2,
+      "name": "미디어 처리 단계와 요청 누적 예산",
+      "apply_when": "선정 endpoint가 이미지·오디오 등 미디어를 실제 수용할 때 추가한다. 실제 다운로드·base64 해제·decode·전처리의 사용 단계와 동일 요청의 복수 미디어·실제 재시도 누적 비용을 확인하며, 텍스트·생성 개수·공정성의 기존 분기는 유지한다. 담당 CHK의 고유 추가 시험으로 선정하며 기존 SC 원문은 당시 범위로 보존한다.",
+      "branch_sha256": "b691bf4acb95eada98a111460a036f7917e13ff7f6766d77dcaf1732a35f2063",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다. 요청 빈도·순간 집중량의 경계, 집계 주체·시간 기준과 공유 한도의 실제 집행·회복은 기존 관측만으로 확인되지 않아 추가 증거가 필요하다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-004",
+      "branch_index": 0,
+      "name": "느린 수신자로 출력 버퍼·연결 점유",
+      "apply_when": "streaming 연결의 느린 읽기와 연결 종료 경로가 있다.",
+      "branch_sha256": "0584a1604d379e030deedf35e3f8781bdd12d397ba6dc190621b8b60d7c072cb",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/1",
+          "relationship": "부분 결과",
+          "observed_scope": "느린 수신·연결 종료와 RSS를 관측했다.",
+          "remaining_scope": "승인한 버퍼·연결 상한과 종료 후 반환을 같은 조건에서 대조해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/1/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "승인한 버퍼·연결 상한과 종료 후 반환을 같은 조건에서 대조해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-004",
+      "branch_index": 1,
+      "name": "디버그 응답 보관으로 메모리 고갈",
+      "apply_when": "선정 route에서 응답 debug buffering이 실제 활성화되어 응답을 보관한다. 비사용은 유효 설정·등록 및 도달 경로 근거로 확인하고 활성 여부를 모르면 미정으로 남긴다.",
+      "branch_sha256": "bd8b145f4b76dde91314663d8287775ddda8db816ba99c820eb8a63b26e75bd4",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-005",
+      "branch_index": 0,
+      "name": "rank 준비 실패를 놓친 채 요청 수용",
+      "apply_when": "기본 재시작·재배포에서 rank별 준비·부분 실패·정리를 확인한다. Ray/live는 선택 시만 추가한다.",
+      "branch_sha256": "6fa0dea297df4ab0861efde120aa9fa0649977cd05a676f748a38677cc00f4fa",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/2",
+          "relationship": "관련 관측",
+          "observed_scope": "진행 중 요청과 교체·복구를 관측했다.",
+          "remaining_scope": "분산 rank 준비 실패와 접수 차단을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/2/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "분산 rank 준비 실패와 접수 차단을 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-005",
+      "branch_index": 1,
+      "name": "승인·준비 검증을 건너뛴 서비스 재개",
+      "apply_when": "모델 준비·승인 확인과 외부 접수 gate/재개를 연결한다.",
+      "branch_sha256": "c8acac1321adc8c990edd7ff439153ae209719e96ea169eac459c6fc5645ef86",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/2",
+          "relationship": "관련 관측",
+          "observed_scope": "교체 전후 요청 처리 기록이 있다.",
+          "remaining_scope": "승인 검사를 건너뛴 재개와 최종 승인 대상을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/2/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "승인 검사를 건너뛴 재개와 최종 승인 대상을 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-006",
+      "branch_index": 0,
+      "name": "실행 중 교체에서 weights·KV 세대 혼합",
+      "apply_when": "실행 중 weights/LoRA 변경·rolling·다중 replica 전환을 실제 사용한다.",
+      "branch_sha256": "2f3470fb87b5f8d5b47fd8f4036cf97d91e137927af19477c557fa7256f7679e",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/3",
+          "relationship": "관련 관측",
+          "observed_scope": "과거 시험 범위의 잘못된 기동 구성을 관측했다.",
+          "remaining_scope": "실행 중 weights·KV 교체와 세대 혼합 시험은 확보하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/3/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "실행 중 weights·KV 교체와 세대 혼합 시험은 확보하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-007",
+      "branch_index": 0,
+      "name": "rank 준비 실패를 놓친 채 요청 수용",
+      "apply_when": "기본 재시작·재배포에서 rank별 준비·부분 실패·정리를 확인한다. Ray/live는 선택 시만 추가한다.",
+      "branch_sha256": "6fa0dea297df4ab0861efde120aa9fa0649977cd05a676f748a38677cc00f4fa",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/4",
+          "relationship": "관련 관측",
+          "observed_scope": "CPU 시작·health 상태를 관측했다.",
+          "remaining_scope": "모든 rank·필수 모델 준비와 준비 실패 시 접수 차단을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/4/activation_scope_complete",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-14",
+          "relationship": "관련 관측",
+          "observed_scope": "시작 중 준비되지 않은 상태의 503을 관측했다.",
+          "remaining_scope": "필수 worker·rank 전체 준비와 모델 적재 증거는 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "모든 rank·필수 모델 준비와 준비 실패 시 접수 차단을 확인해야 한다. 필수 worker·rank 전체 준비와 모델 적재 증거는 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-007",
+      "branch_index": 1,
+      "name": "승인·준비 검증을 건너뛴 서비스 재개",
+      "apply_when": "모델 준비·승인 확인과 외부 접수 gate/재개를 연결한다.",
+      "branch_sha256": "c8acac1321adc8c990edd7ff439153ae209719e96ea169eac459c6fc5645ef86",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/4",
+          "relationship": "관련 관측",
+          "observed_scope": "기동 상태 변화 기록이 있다.",
+          "remaining_scope": "승인 대상 소비·준비 검사의 생략을 시험해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/4/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "승인 대상 소비·준비 검사의 생략을 시험해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-008",
+      "branch_index": 0,
+      "name": "worker 장애 뒤 그룹 자원 정리 실패",
+      "apply_when": "선정 executor/collective의 worker 감시·장애·그룹 회수 경로를 확인한다.",
+      "branch_sha256": "4541a9b0927659692369efa737491412f77b50cec61905dc534076e4b558523f",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/5",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU 프로세스 종료·일시 정지·예외와 응답 상태를 관측했다.",
+          "remaining_scope": "SIGSTOP은 실제 네트워크 장애를 재현하지 않으며 분산 그룹·장치 자원 정리를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/5/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "SIGSTOP은 실제 네트워크 장애를 재현하지 않으며 분산 그룹·장치 자원 정리를 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-009",
+      "branch_index": 0,
+      "name": "rank 준비 실패를 놓친 채 요청 수용",
+      "apply_when": "기본 재시작·재배포에서 rank별 준비·부분 실패·정리를 확인한다. Ray/live는 선택 시만 추가한다.",
+      "branch_sha256": "6fa0dea297df4ab0861efde120aa9fa0649977cd05a676f748a38677cc00f4fa",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/6",
+          "relationship": "관련 관측",
+          "observed_scope": "과거 시험 범위의 잘못된 구성을 관측했다.",
+          "remaining_scope": "개별 worker·rank 초기화 실패와 그룹 정리 기록을 확보해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/6/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "개별 worker·rank 초기화 실패와 그룹 정리 기록을 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-010",
+      "branch_index": 0,
+      "name": "취소 뒤 GPU 작업·출력·참조 잔존",
+      "apply_when": "일반/streaming의 대기·계산·출력 단계에서 취소·연결 종료·timeout·stop 종료를 확인한다.",
+      "branch_sha256": "34b6c248a9a5ae025a4b2ccfdd730a5dfd941555d48c426027eb68677c0aaa8d",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/7",
+          "relationship": "관련 관측",
+          "observed_scope": "클라이언트 연결 종료와 후속 정상 요청을 관측했다.",
+          "remaining_scope": "취소 후 GPU 작업·출력·참조의 종료는 계측하지 않았다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/7/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "취소 후 GPU 작업·출력·참조의 종료는 계측하지 않았다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-011",
+      "branch_index": 0,
+      "name": "worker 장애 뒤 그룹 자원 정리 실패",
+      "apply_when": "선정 executor/collective의 worker 감시·장애·그룹 회수 경로를 확인한다.",
+      "branch_sha256": "4541a9b0927659692369efa737491412f77b50cec61905dc534076e4b558523f",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/8",
+          "relationship": "관련 관측",
+          "observed_scope": "worker 장애 전후 프로세스·공유 메모리 일부를 관측했다.",
+          "remaining_scope": "컨테이너 종료 뒤 자원 목록을 확인하지 못해 그룹 전체 반환은 미확인이다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/8/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "컨테이너 종료 뒤 자원 목록을 확인하지 못해 그룹 전체 반환은 미확인이다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-011",
+      "branch_index": 1,
+      "name": "rank 준비 실패를 놓친 채 요청 수용",
+      "apply_when": "기본 재시작·재배포에서 rank별 준비·부분 실패·정리를 확인한다. Ray/live는 선택 시만 추가한다.",
+      "branch_sha256": "6fa0dea297df4ab0861efde120aa9fa0649977cd05a676f748a38677cc00f4fa",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-012",
+      "branch_index": 0,
+      "name": "자동 재시도로 중복 실행·결과 혼입",
+      "apply_when": "앱·SDK·Gateway·엔진의 추론 자동 retry가 실제 사용·노출되거나 금지 정책의 거부 확인이 필요할 때 선정한다. 수동 재호출은 별도 대조이며 취득 SDK retry와 구분한다.",
+      "branch_sha256": "f9674d7d4d94c85fb3a897522b15e951df99e157597c3a266b45ef2b37931f4f",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/9",
+          "relationship": "관련 관측",
+          "observed_scope": "엔진·클라이언트의 실행 시도 수가 각각 1인 정상 기록이 있다.",
+          "remaining_scope": "자동 재시도를 실제 발생시킨 기록이 없어 중복 실행 방지는 미확인이다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/9/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "자동 재시도를 실제 발생시킨 기록이 없어 중복 실행 방지는 미확인이다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-013",
+      "branch_index": 0,
+      "name": "전역 cache 해제로 다른 소비자의 참조 손상",
+      "apply_when": "ipc_cache/preload 등 별도 daemon과 실제 release 경로를 사용한다. copy/zero-copy를 나눈다.",
+      "branch_sha256": "ef357342dffc6bf71ce02265e5e00e4f74f30d0d2a3ff67217344056f7db136e",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-LIF-13-20261103.json",
+          "source_sha256": "82010e78dccf78fa350eeb1856f6e7d63b02edcf1440a41de080efb5b0a5ab6d",
+          "source_url": "references/evidence/gpu-a-LIF-13-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "두 소비자의 zero-copy 참조와 전역 release 후 동작을 관측했다.",
+          "remaining_scope": "수동 UNKNOWN이며 copy 경로·전체 모델·해제 권한·모든 소비자 참조는 미확인이다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "manual-entry",
+                  "version": "0.5.0",
+                  "config_sha256": "ae4dfbe1593b3558556c60a417f8119c638617ca28ba6a25b9fb02ad8a7a15a5",
+                  "default_judge": "declared"
+                },
+                "adapter": null,
+                "started_at": "2026-11-03T12:14:38.262836Z",
+                "finished_at": "2026-11-03T12:20:58Z",
+                "abort_reason": null,
+                "operator": {
+                  "by": "Codex / user-authorized BYUL A lab observation",
+                  "at": "2026-11-03T12:20:58Z"
+                },
+                "override_reason": "Automatic native source/transport contract unavailable; preserve explicitly scoped actual GPU observations as manual evidence."
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261106.json",
+          "source_sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261106.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "zero-copy 해제와 참조의 추가 UNKNOWN 기록이다.",
+          "remaining_scope": "copy 경로와 모든 소비자·권한·모델 반환은 미확인이다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN",
+                "security": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "abort_reason": "ENGINE_SENSOR_CALLBACK_SCOPE_INCOMPLETE",
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "cleanup_errors": [
+                  "ENGINE_SENSOR_LAB_CONSUMER_CLEANUP_UNVERIFIED"
+                ],
+                "executor": {
+                  "config_sha256": "880fc5f14f2256f2f7be98a97909aaad3402bf770fecad5c9b2b1fe717d8769f",
+                  "name": "engine_sensor",
+                  "version": "0.1.4"
+                },
+                "finished_at": "2026-11-06T06:08:51Z",
+                "started_at": "2026-11-06T06:06:48Z",
+                "status": "ABORTED"
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "수동 UNKNOWN이며 copy 경로·전체 모델·해제 권한·모든 소비자 참조는 미확인이다. copy 경로와 모든 소비자·권한·모델 반환은 미확인이다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-014",
+      "branch_index": 0,
+      "name": "profiler 정지 응답을 수집 종료로 오판",
+      "apply_when": "선정 profiler가 활성이고 실제 등록 route·backend 종료 경로가 있다.",
+      "branch_sha256": "14ae739a27fc8bf3513e6df748f73077b9521224f2d9a2c6a8550ff2ec513d75",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/10",
+          "relationship": "부분 결과",
+          "observed_scope": "정상 profiler 시작·정지와 trace 파일을 관측했다.",
+          "remaining_scope": "오류 정지·수집 종료·잔류 파일 쓰기를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/10/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "오류 정지·수집 종료·잔류 파일 쓰기를 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-015",
+      "branch_index": 0,
+      "name": "과거 백업으로 철회된 모델·자격 복원",
+      "apply_when": "기본 재배포 복원에서 이전 묶음을 다시 사용한다. 현재 승인·철회와 대조한다.",
+      "branch_sha256": "6563a3f62e2186529e9b00a437d26c711ec5a48aec07d176d6b8522cfcfe4256",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-13",
+          "relationship": "관련 관측",
+          "observed_scope": "잘못된 bundle 해시의 시작 거부와 복귀를 관측했다.",
+          "remaining_scope": "철회된 자료·현재 키·정책의 재적용을 포함한 실제 백업 복구는 미확인이다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "철회된 자료·현재 키·정책의 재적용을 포함한 실제 백업 복구는 미확인이다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-016",
+      "branch_index": 0,
+      "name": "변조된 백업의 실행·서비스 사용",
+      "apply_when": "backup/복원 사본을 실제 consumer가 읽는다.",
+      "branch_sha256": "4c0c3a96a9936fe285f8796ba2e9575d7e852162006f13c8726c6821161677ca",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/11",
+          "relationship": "관련 관측",
+          "observed_scope": "과거의 잘못된 기동 구성 시험 기록이 있다.",
+          "remaining_scope": "실제 백업 변조·검증 실패와 복원 후 접수 제한을 시험해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/11/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "실제 백업 변조·검증 실패와 복원 후 접수 제한을 시험해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-LIF-016",
+      "branch_index": 1,
+      "name": "snapshot 복원 검증 전에 추론 요청 접수",
+      "apply_when": "특수 snapshot을 실제 선택하고 해당 플랫폼·단일 rank 등 지원 조건을 확인한다. 기본 TP 재배포와 구분한다. 상세 지원 조건은 기존 SC-20-04 기록을 함께 확인한다.",
+      "branch_sha256": "d448234f42d88b84572d1cd6b6d8fabca524772a398765d5a64e0362ae84aa00",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-001",
+      "branch_index": 0,
+      "name": "대상 식별 오류로 비승인 사용을 정상 판단",
+      "apply_when": "승인·검사·소비의 필수 사건을 실제 실행과 연결한다.",
+      "branch_sha256": "f9f92f6f7360a03ec9db7122f4ac7c57d0fbd925108b67a80c92b5938487308d",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-001",
+      "branch_index": 1,
+      "name": "수집 장애를 숨긴 채 시험 통과 보고",
+      "apply_when": "필수 관측 경로와 사건의 수집·기한·장애 처리를 확인한다.",
+      "branch_sha256": "e3e1d7910070ca4156935ec9a62f1d9931ce4afa9f87c72f5ccee242e13e041b",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-07",
+          "relationship": "부분 결과",
+          "observed_scope": "수집 실패가 상태에 반영되는지 관측했다.",
+          "remaining_scope": "필수 증거 누락을 가진 판정의 보류까지 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "필수 증거 누락을 가진 판정의 보류까지 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-002",
+      "branch_index": 0,
+      "name": "health 정상 표시로 실제 추론 장애 은폐",
+      "apply_when": "준비·실패·종료의 API/health·기록과 실제 worker/추론 상태를 비교한다.",
+      "branch_sha256": "594085c12325b2d31875b7d99515957bed489ca84951ea4d96b154a1e3e7f0b5",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/12",
+          "relationship": "부분 결과",
+          "observed_scope": "worker 장애 뒤 health 503과 프로세스 종료를 관측했다.",
+          "remaining_scope": "정상 health와 실제 추론·필수 worker 준비의 불일치를 선정 조건별로 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/12/activation_scope_complete",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-08",
+          "relationship": "부분 결과",
+          "observed_scope": "Pod 상태 변화와 추론·관측 상태를 확인했다.",
+          "remaining_scope": "Pod 교체 결과를 개별 native worker 장애 시험으로 확대하지 않는다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "정상 health와 실제 추론·필수 worker 준비의 불일치를 선정 조건별로 확인해야 한다. Pod 교체 결과를 개별 native worker 장애 시험으로 확대하지 않는다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-002",
+      "branch_index": 1,
+      "name": "profiler 정지 응답을 수집 종료로 오판",
+      "apply_when": "선정 profiler가 활성이고 실제 등록 route·backend 종료 경로가 있다.",
+      "branch_sha256": "14ae739a27fc8bf3513e6df748f73077b9521224f2d9a2c6a8550ff2ec513d75",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/10",
+          "relationship": "관련 관측",
+          "observed_scope": "profiler 시작·정지 응답과 trace 파일 수를 관측했다.",
+          "remaining_scope": "수집 종료·잔류 쓰기와 오류 정지 상태는 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/10/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "수집 종료·잔류 쓰기와 오류 정지 상태는 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-002",
+      "branch_index": 2,
+      "name": "대상 식별 오류로 비승인 사용을 정상 판단",
+      "apply_when": "승인·검사·소비의 필수 사건을 실제 실행과 연결한다.",
+      "branch_sha256": "f9f92f6f7360a03ec9db7122f4ac7c57d0fbd925108b67a80c92b5938487308d",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-17",
+          "relationship": "관련 관측",
+          "observed_scope": "Pod UID 변경 때 상태 초기화를 관측했다.",
+          "remaining_scope": "실제 승인 대상 식별·소비까지 확인하지 못했다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "실제 승인 대상 식별·소비까지 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-003",
+      "branch_index": 0,
+      "name": "로그 읽기 권한으로 비공개 입력 사본 열람",
+      "apply_when": "기본 로그·예외 dump·저장 기록을 확인하며 debug/진단 사본은 실제 생성 조건으로 추가한다.",
+      "branch_sha256": "1be043eeb0677fa16ab069144d049588e28207df016974231d5e3db55b584420",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "automation-phase1-20261023.json",
+          "source_sha256": "06b182e66962bf14d7158900be568c37e027ac6f83b64c3b974dc6440ed04522",
+          "source_url": "references/evidence/automation-phase1-20261023.json",
+          "source_pointer": "/all_eight/checks/0",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU 실제 실행에서 로그 관측 일부가 수집됐다.",
+          "remaining_scope": "원문 security UNKNOWN과 빠진 log/dump 사건을 유지한다. 반환 응답 노출 시험으로 로그 사본의 보호를 대신하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/all_eight/checks/0/actual/security",
+              "value": "UNKNOWN"
+            },
+            {
+              "pointer": "/all_eight/checks/0/actual/functional",
+              "value": "PASS"
+            },
+            {
+              "pointer": "/all_eight/checks/0/actual/performance",
+              "value": "UNKNOWN"
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "원문 security UNKNOWN과 빠진 log/dump 사건을 유지한다. 반환 응답 노출 시험으로 로그 사본의 보호를 대신하지 않는다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-003",
+      "branch_index": 1,
+      "name": "반환 옵션·오류를 이용한 입력·내부 정보 노출",
+      "apply_when": "일반/stream 응답·오류를 기본 확인하고 반환 옵션은 지원·수용/거부와 실제 필드별로 추가한다.",
+      "branch_sha256": "bb8cf7e5245ac168e39a67de0f5c1e2e388deb5d3cbac4682229ceba22435baf",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-004",
+      "branch_index": 0,
+      "name": "설정 조작으로 금지한 사용·환경 정보 보고 재개",
+      "apply_when": "usage 금지 정책에서 rank0 env/config·새 프로세스 최초 판단·생성/송신을 확인한다.",
+      "branch_sha256": "871385054f988fd0e43ed4e8124c5e7cfe3604bc43628cf9018bcd77e596996c",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/17",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 사용통계 payload와 수신지를 관측했다.",
+          "remaining_scope": "fresh process의 실제 적용과 모든 금지 항목·최종 수신을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/17/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/17/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/17/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "boundary_egress",
+                  "version": "0.1.0+k8s.1",
+                  "config_sha256": "e5719fb5071a81fd911e0275de811fdd15cfba03892ae0dff2b1e2f8d1c107a2"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:02:25Z",
+                "finished_at": "2026-11-05T13:02:33Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "fresh process의 실제 적용과 모든 금지 항목·최종 수신을 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-005",
+      "branch_index": 0,
+      "name": "허용하지 않은 사용·환경 정보 항목·목적지 전송",
+      "apply_when": "usage 보고를 일부/전체 허용하며 runtime 필드·목적지를 지정한다.",
+      "branch_sha256": "14f833a012b337675a087c90de031667177b59bd7f454778a888a18259851825",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/19",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 보고 payload와 수신지 및 functional PASS 기록이 있다.",
+          "remaining_scope": "security UNKNOWN을 유지한다. 이번에 명시한 초기·반복 구분, 생성·송수신 시각, 관측 구간·주기·재시도 증거가 필요하다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/19/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/19/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/19/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "boundary_egress",
+                  "version": "0.1.0+k8s.1",
+                  "config_sha256": "391ea61a7422e8122d15e39a70f6646ca654bcc4aa6c02cfc8eb340a50a87991"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:04:20Z",
+                "finished_at": "2026-11-05T13:04:27Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "security UNKNOWN을 유지한다. 이번에 명시한 초기·반복 구분, 생성·송수신 시각, 관측 구간·주기·재시도 증거가 필요하다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-006",
+      "branch_index": 0,
+      "name": "로그 읽기 권한으로 비공개 입력 사본 열람",
+      "apply_when": "기본 로그·예외 dump·저장 기록을 확인하며 debug/진단 사본은 실제 생성 조건으로 추가한다. 해당 저장 위치의 암호화 요구·적용 상태·복호화 권한도 대조한다.",
+      "branch_sha256": "a9f34349857433b3ab47259d01bae96525dd70a58192360ea9fd2fb6c2ce8a9a",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 로그 읽기 권한을 대조했다.",
+          "remaining_scope": "로그 사본 전체와 저장 암호화·정상 열람을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "record_access",
+                  "version": "0.1.0",
+                  "config_sha256": "63c537c88a85ba23510dd70d571967c3b47d6cc381cab748370e31beaa1a4b67"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:59:53Z",
+                "finished_at": "2026-11-05T12:59:54Z",
+                "abort_reason": "RECORD_ACCESS_INVENTORY_UNAVAILABLE"
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "로그 사본 전체와 저장 암호화·정상 열람을 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-006",
+      "branch_index": 1,
+      "name": "보존 기한 뒤 남은 사용통계 사본 노출",
+      "apply_when": "usage 로컬 파일 또는 실제 원격 수신·보관 사본이 존재한다. 해당 저장 위치의 암호화 요구·적용 상태·복호화 권한도 대조한다.",
+      "branch_sha256": "10a6bb4df8e8088d60269fd9951965690d998b8cfd6124c05c036dee7dbc1ff1",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-007",
+      "branch_index": 0,
+      "name": "진단 자료 조회권을 이용한 고권한 replay",
+      "apply_when": "서빙 운영의 장애 분석·재현에 쓰는 외부 도구가 진단 자료를 읽어 재실행하도록 실제 배치된다. 단순 진단 파일 보관과 구분한다.",
+      "branch_sha256": "e467419e569902446b2c72e5e1952e84090b8511cf09665012380714cad1924d",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-008",
+      "branch_index": 0,
+      "name": "변조한 진단 파일로 고권한 도구 동작 유도",
+      "apply_when": "replay/역직렬화 consumer가 진단 자료를 실제 읽고 실행한다.",
+      "branch_sha256": "07e633e767f12f1a19c7f2f30668d82fb587a35aab6b3142d5b23104516aa6fb",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-009",
+      "branch_index": 0,
+      "name": "요청 필드를 이용한 로그 신원·결과 오인",
+      "apply_when": "수용된 외부 입력이 formatter·collector·화면의 사건·신뢰 필드에 반영된다.",
+      "branch_sha256": "e371ed8f9c485d2d8663883e8c3b5203b9fd009aca112227c9294bc291477135",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261106.json",
+          "source_sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261106.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "로그 포맷·수집의 UNKNOWN과 PASS 기록이다.",
+          "remaining_scope": "선정 입력 밖의 이벤트·모든 수집·표시 경로와 정상 대조를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN",
+                "security": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "abort_reason": "ARTIFACT_CAPTURE_INCOMPLETE",
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "executor": {
+                  "config_sha256": "c6e8d069af94db752a0034f184090bd88663b40f126bcea1982779a56295a178",
+                  "name": "log_integrity",
+                  "version": "0.3.1+k8s.2"
+                },
+                "finished_at": "2026-11-06T05:33:41Z",
+                "started_at": "2026-11-06T05:33:36Z",
+                "status": "ABORTED"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261106.json",
+          "source_sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261106.json",
+          "source_pointer": "/runs/3",
+          "relationship": "부분 결과",
+          "observed_scope": "로그 포맷·수집의 UNKNOWN과 PASS 기록이다.",
+          "remaining_scope": "선정 입력 밖의 이벤트·모든 수집·표시 경로와 정상 대조를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/3/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/3/results/0/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            },
+            {
+              "pointer": "/runs/3/evidence/0/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "executor": {
+                  "config_sha256": "c6e8d069af94db752a0034f184090bd88663b40f126bcea1982779a56295a178",
+                  "name": "log_integrity",
+                  "version": "0.3.1+k8s.2"
+                },
+                "finished_at": "2026-11-06T06:11:49Z",
+                "started_at": "2026-11-06T06:11:43Z",
+                "status": "COMPLETED"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "automation-phase3-20261023.json",
+          "source_sha256": "b65b4742cdc94e374f84515ccc4db4a7e0e5aa5a464e14253ced0ef6a4d9791a",
+          "source_url": "references/evidence/automation-phase3-20261023.json",
+          "source_pointer": "/attempts/0/checks/0",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU의 선정 native INFO·수집기·표시 또는 요청 귀속을 관측했다.",
+          "remaining_scope": "기업 SIEM과 모든 수집·변환 경로 및 분기 전체의 증거는 확보하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/attempts/0/checks/0/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.0"
+                },
+                "executor": {
+                  "config_sha256": "26d62b0974e692ef38144404f15beacddaced4cec1ef2e494fda0243f76746ca",
+                  "name": "log_integrity",
+                  "version": "0.1.0"
+                },
+                "finished_at": "2026-10-23T12:07:50Z",
+                "started_at": "2026-10-23T12:07:37Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/attempts/0/checks/0/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "automation-phase3-20261023.json",
+          "source_sha256": "b65b4742cdc94e374f84515ccc4db4a7e0e5aa5a464e14253ced0ef6a4d9791a",
+          "source_url": "references/evidence/automation-phase3-20261023.json",
+          "source_pointer": "/attempts/1/checks/0",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU의 선정 native INFO·수집기·표시 또는 요청 귀속을 관측했다.",
+          "remaining_scope": "기업 SIEM과 모든 수집·변환 경로 및 분기 전체의 증거는 확보하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/attempts/1/checks/0/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.0"
+                },
+                "executor": {
+                  "config_sha256": "26d62b0974e692ef38144404f15beacddaced4cec1ef2e494fda0243f76746ca",
+                  "name": "log_integrity",
+                  "version": "0.1.0"
+                },
+                "finished_at": "2026-10-23T12:16:30Z",
+                "started_at": "2026-10-23T12:15:40Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/attempts/1/checks/0/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "선정 입력 밖의 이벤트·모든 수집·표시 경로와 정상 대조를 확인해야 한다. 기업 SIEM과 모든 수집·변환 경로 및 분기 전체의 증거는 확보하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-010",
+      "branch_index": 0,
+      "name": "기록 삭제·변조로 사고 흔적 은폐",
+      "apply_when": "실제 기록 저장소·writer·검토자 권한과 감사 경로를 확인한다.",
+      "branch_sha256": "cbffd78e67ff8c1227ec5083d0887e50667b6e316b791a463c99fa0a9fe65001",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-011",
+      "branch_index": 0,
+      "name": "운영 기록 수집 장애의 탐지·알림",
+      "apply_when": "서빙 운영의 필수 기록 수집 경로와 중단·누락·시각 오류에 대한 탐지·알림·복구 조건을 확인한다.",
+      "branch_sha256": "191d1f81c475fe98a765db7bd0335a80aecaf8bfd67fda77e6ed3a5d9e75818d",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-07",
+          "relationship": "부분 결과",
+          "observed_scope": "수집 중단·복구를 관측했다.",
+          "remaining_scope": "실제 담당자 알림 전달·누락 구간·복구 뒤 연속성을 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "실제 담당자 알림 전달·누락 구간·복구 뒤 연속성을 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-012",
+      "branch_index": 0,
+      "name": "삭제에서 빠진 사본을 통한 자료 열람",
+      "apply_when": "자료·cache·로그·backup의 원본/사본을 저장한다. 자료 종류별 보존·삭제 정책을 적용한다.",
+      "branch_sha256": "f3d9b86e15bd6dfba429ee7bca876d42847783b5f6e63fc1b11a7ccdbbe85cd1",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-OBS-012",
+      "branch_index": 1,
+      "name": "보존 기한 뒤 남은 사용통계 사본 노출",
+      "apply_when": "usage 로컬 파일 또는 실제 원격 수신·보관 사본이 존재한다.",
+      "branch_sha256": "ec594ef35595d995cdc84ded626a19b782f91d65b927aee4f7b58437df92ed4d",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-001",
+      "branch_index": 0,
+      "name": "승인 코드의 과도한 권한을 이용한 피해 확대",
+      "apply_when": "승인된 코드가 실제 엔진 계정·장치·파일·통신 권한으로 실행된다.",
+      "branch_sha256": "dc0750cbfeec2a565164bd1ea83a2ef92f6896998cea415d222862a362a1782c",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "automation-phase2-20261023.json",
+          "source_sha256": "030b1ce89b0877bc1486fca7547bc35c1ad31c0c7fa504e2f0c07583fb0209e9",
+          "source_url": "references/evidence/automation-phase2-20261023.json",
+          "source_pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/0",
+          "relationship": "부분 결과",
+          "observed_scope": "vLLM CPU 선정 실행의 원래 판정과 측정을 보존했다.",
+          "remaining_scope": "선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/0/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.3.0"
+                },
+                "executor": {
+                  "config_sha256": "c28a720e144ce181cc66b5738936a04b966f863daef51cc4b9a58e2d5e06c9fa",
+                  "name": "container_config",
+                  "version": "0.4.0"
+                },
+                "finished_at": "2026-10-23T11:21:27Z",
+                "started_at": "2026-10-23T11:21:23Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/0/challenges/2/observations/functional",
+              "value": {
+                "POST /v1/completions": 200
+              }
+            },
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/0/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-b-phase1-status-20261105.json",
+          "source_sha256": "5bc828d06f15c023dae56043d1d8b0c4a6123298179de5eed290da2e11d2726e",
+          "source_url": "references/evidence/gpu-b-phase1-status-20261105.json",
+          "source_pointer": "/reused_evidence/12",
+          "relationship": "부분 결과",
+          "observed_scope": "과거 증거를 재사용한 기록이며 새 GPU 실행은 0건이다.",
+          "remaining_scope": "원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/reused_evidence/12/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/reused_evidence/12/whole_question_complete",
+              "value": false
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-06",
+          "relationship": "부분 결과",
+          "observed_scope": "모델 경로 읽기 전용 설정을 관측했다.",
+          "remaining_scope": "다른 권한·마운트·장치·capability를 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다. 원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다. 다른 권한·마운트·장치·capability를 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-002",
+      "branch_index": 0,
+      "name": "로컬 socket 접근을 통한 내부 제어 침입",
+      "apply_when": "실제 socket·SHM 등 로컬 IPC 경로와 peer 접근권이 있다.",
+      "branch_sha256": "a561be7e267a096c458bb8c738d1c34d054e7a4d2bd6e6e9d5ffc946ca3e1d33",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-003",
+      "branch_index": 0,
+      "name": "서버 자격을 이용한 다른 저장소 자료 접근",
+      "apply_when": "서버 자격으로 취득·저장소 접근하거나 로컬 마운트 주체가 공급물을 제공한다.",
+      "branch_sha256": "da1330c24adc4fb5555227668c205b64ecc8c5c0c9161f6f86d4161a2c51a2f4",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-004",
+      "branch_index": 0,
+      "name": "worker에 전달된 불필요한 비밀정보 탈취",
+      "apply_when": "실제 worker가 부모 환경·secret/mount·장치 권한을 전달받는다. Ray 전달은 선택 시 추가한다.",
+      "branch_sha256": "53ab91f031c2a3093ca5c1a90acae19687ab378a2fc4dd6a8f108a36f4221eaf",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-b-phase1-status-20261105.json",
+          "source_sha256": "5bc828d06f15c023dae56043d1d8b0c4a6123298179de5eed290da2e11d2726e",
+          "source_url": "references/evidence/gpu-b-phase1-status-20261105.json",
+          "source_pointer": "/reused_evidence/13",
+          "relationship": "부분 결과",
+          "observed_scope": "과거 증거를 재사용한 기록이며 새 GPU 실행은 0건이다.",
+          "remaining_scope": "원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/reused_evidence/13/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/reused_evidence/13/whole_question_complete",
+              "value": false
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-10",
+          "relationship": "관련 관측",
+          "observed_scope": "선정 비밀 파일의 읽기를 탐지했다.",
+          "remaining_scope": "탐지는 최소 비밀 전달·접근 차단의 증거와 구분한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다. 탐지는 최소 비밀 전달·접근 차단의 증거와 구분한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-005",
+      "branch_index": 0,
+      "name": "자격 만료 뒤 승인하지 않은 대체 접근",
+      "apply_when": "선정 SDK가 만료·누락 자격을 처리하며 익명·대체 자격 경로의 존재를 조사한다.",
+      "branch_sha256": "88b0c27e56ba70dab72a83f4947a36e3cf11b34adbce5f45d0e7808b7247589d",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-006",
+      "branch_index": 0,
+      "name": "공유 권한을 가진 worker 침해의 영향 확대",
+      "apply_when": "core·worker의 실제 UID·protocol·공유 실행 신뢰 범위를 확인한다. 같은 UID/pickle 내부를 독립 인가 경계로 가정하지 않는다.",
+      "branch_sha256": "f2a86a883e991f56f968753d52d23a71ed8f8611491e9e4c3e4dabda75000234",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-007",
+      "branch_index": 0,
+      "name": "서버 자격을 이용한 다른 저장소 자료 접근",
+      "apply_when": "취득·반입 경로가 실제 원격 연결·DNS·redirect를 사용해 송신할 때 허용 목적지·작업과 실제 연결을 확인한다. 네트워크 송신이 없는 로컬 공급은 이 분기와 구분하며 다른 송신 경로의 기본 점검은 유지한다.",
+      "branch_sha256": "57edb65d03ce19169e0e6d055cbb478e09e3b24b423d65ae730f84c0fe6b3342",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-007",
+      "branch_index": 1,
+      "name": "승인 코드의 과도한 권한을 이용한 피해 확대",
+      "apply_when": "승인된 코드가 실제 엔진 계정·장치·파일·통신 권한으로 실행된다.",
+      "branch_sha256": "dc0750cbfeec2a565164bd1ea83a2ef92f6896998cea415d222862a362a1782c",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-05",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 송신 대상 제한을 관측했다.",
+          "remaining_scope": "실제 모델 취득·redirect·DNS·L7 최종 수신과 전체 송신 경로를 추가 확인해야 한다.",
+          "original_statuses": []
+        },
+        {
+          "source_file": "AWS_GPU_서버16회차_결과_20261111.md",
+          "source_sha256": "5ab9a325ec74d242172a59617bdffa362893074a6036f131bee1ecf0b57c5b92",
+          "source_url": "references/evidence/AWS_GPU_서버16회차_결과_20261111.md",
+          "source_pointer": "",
+          "relationship": "관련 관측",
+          "observed_scope": "IMDS·공인 IP 송신 제한을 관측했다.",
+          "remaining_scope": "선정 송신 외의 전체 실제 취득·최종 수신·정상 허용 송신은 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "실제 모델 취득·redirect·DNS·L7 최종 수신과 전체 송신 경로를 추가 확인해야 한다. 선정 송신 외의 전체 실제 취득·최종 수신·정상 허용 송신은 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-007",
+      "branch_index": 2,
+      "name": "설정 조작으로 금지한 사용통계 보고 재개",
+      "apply_when": "usage 금지 정책에서 rank0 env/config·새 프로세스 최초 판단·생성/송신을 확인한다.",
+      "branch_sha256": "60373322610d020836104fe25ede85f36ba18dfabaf16fba63a13df4331ce151",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-007",
+      "branch_index": 3,
+      "name": "허용하지 않은 사용통계 항목·목적지 전송",
+      "apply_when": "usage 보고를 일부/전체 허용하며 runtime 필드·목적지를 지정한다.",
+      "branch_sha256": "3f82c57a5eb6767fc35a5b7bee883442d73c9c1d1bb71246870bf35adc5ab56e",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-007",
+      "branch_index": 4,
+      "name": "엔진→수집기 구간에서 기록 도청·변조",
+      "apply_when": "엔진이 collector로 관측 자료를 송신할 때 연결 시작 주체·최종 목적지·작업의 egress 제한을 확인한다. 같은 구간의 exporter protocol·TLS/peer 검증은 CHK-PLT-009에서 판정한다.",
+      "branch_sha256": "e769cbfc541cd4d8e65795dc9cea2bf991ae140a7fcac7e01cf2bb83673fc0d8",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-008",
+      "branch_index": 0,
+      "name": "로컬 socket 접근을 통한 내부 제어 침입",
+      "apply_when": "실제 socket·SHM 등 로컬 IPC 경로와 peer 접근권이 있다.",
+      "branch_sha256": "a561be7e267a096c458bb8c738d1c34d054e7a4d2bd6e6e9d5ffc946ca3e1d33",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-008",
+      "branch_index": 1,
+      "name": "GPU 프로세스 통신의 도청·변조",
+      "apply_when": "선정 local collective·SHM·CUDA IPC 등 실제 전송이 선택될 때. UID/namespace와 native 접근 경계를 확인한다.",
+      "branch_sha256": "75dee870fcb3e82d11a4ce138a76d46845232cf66cfe9f67f5fec39fafba1d1f",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-008",
+      "branch_index": 2,
+      "name": "GPU 프로세스 통신의 도청·변조",
+      "apply_when": "다중 노드·PP 등 별도 transport를 실제 사용하면 추가한다. local TP의 결과를 원격 구간 보호 근거로 쓰지 않는다.",
+      "branch_sha256": "01779e95d801034df64c2c240b4afc68e0e642f7a33d0fbcc2931ba6e2bf4da8",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-009",
+      "branch_index": 0,
+      "name": "엔진→수집기 구간에서 기록 도청·변조",
+      "apply_when": "엔진이 collector로 관측 자료를 전송한다. exporter SDK·protocol·TLS/peer·proxy를 조사한다.",
+      "branch_sha256": "01f8934788e7e43f5fda8a524b8363b619947908ede58c6d771e308228227bd1",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-009",
+      "branch_index": 1,
+      "name": "수집기→저장소 구간에서 기록 도청·변조",
+      "apply_when": "collector 이후 별도 sink·저장소로 자료를 전달한다.",
+      "branch_sha256": "cf24817a5c58699b55e2f675caa81d369b375c93c95fc8b811d979f6c2308834",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-010",
+      "branch_index": 0,
+      "name": "권한 철회 뒤 새 요청 계속 실행",
+      "apply_when": "실제 issuer·정책 cache·권한의 철회와 신규 접근 경로를 확인한다.",
+      "branch_sha256": "2a4d7627e71c00605d30e7d6c62685e7b1f4bbd4d0bc50e5f271b0b675a3559a",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/16",
+          "relationship": "관련 관측",
+          "observed_scope": "권한 철회 시험의 UNKNOWN 기록이다.",
+          "remaining_scope": "실제 자격 집행점·철회 후 새 요청 거부·정상 주체 처리를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/16/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/16/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/16/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "credential_revocation",
+                  "version": "0.1.0",
+                  "config_sha256": "0d65048ac69d22087f6e490482f6efc7c32e71773fe98ac988fd260353b1268e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:08:31Z",
+                "finished_at": "2026-11-05T13:08:38Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "실제 자격 집행점·철회 후 새 요청 거부·정상 주체 처리를 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-011",
+      "branch_index": 0,
+      "name": "철회 전 세션·handle로 접근 유지",
+      "apply_when": "철회 대상 자격으로 열린 지속 session·연결·handle이 존재한다.",
+      "branch_sha256": "69117515305e2431fe2601489a3f19e3429c8380985545743b3f9ccb3c379b68",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-012",
+      "branch_index": 0,
+      "name": "폐기한 자격 사본으로 금지 접근 재개",
+      "apply_when": "자격의 env·mount·backup 등 사본을 확인하고 실제 재사용 경로를 조사한다.",
+      "branch_sha256": "e04fd11069f8f13b3cdc5bec71c7d87957ee500a6fc60b9d116a1b44af513f57",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-013",
+      "branch_index": 0,
+      "name": "파일·볼륨의 직접 접근 보호",
+      "apply_when": "모델·입력·결과·캐시·백업을 파일이나 볼륨에 저장한다.",
+      "branch_sha256": "4180cf15c9f4c49824338305aaffc17c9b516fe2123b5e5621d2280dc5638f3e",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버16회차_결과_20261111.md",
+          "source_sha256": "5ab9a325ec74d242172a59617bdffa362893074a6036f131bee1ecf0b57c5b92",
+          "source_url": "references/evidence/AWS_GPU_서버16회차_결과_20261111.md",
+          "source_pointer": "",
+          "relationship": "관련 관측",
+          "observed_scope": "별도 프로세스의 보호 파일 열기를 LSM에서 거부하고 정상 요청을 관측했다.",
+          "remaining_scope": "실제 모델·입력·결과·캐시·백업 저장 목록과 권한·암호화의 검증은 확보하지 못했다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "실제 모델·입력·결과·캐시·백업 저장 목록과 권한·암호화의 검증은 확보하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-PLT-013",
+      "branch_index": 1,
+      "name": "외부 저장소·사본의 접근 보호",
+      "apply_when": "객체 저장소·DB·원격 캐시·백업 또는 복구 사본을 사용한다.",
+      "branch_sha256": "8d6161bd56bc9ff5f3d00ae19eda9b6dfaa5ff42078d09e16faa00bee4cf1a06",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-001",
+      "branch_index": 0,
+      "name": "엔진 직접 호출을 통한 무단 추론·관리 작업",
+      "apply_when": "활성 추론·관리 route와 실제 listener/접근 경로를 확인한다. Gateway 비사용도 직접 진입 통제 점검 대상이다.",
+      "branch_sha256": "17ca73f2504db4c52713d5f027f9d114a570e70c7db14734b574ee6bf7bad9da",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "직접 접근을 닫음·열음·다시 닫음으로 나눠 PASS·FAIL·PASS를 기록했다.",
+          "remaining_scope": "전체 API·관리 경로와 정상 대조까지 같은 정책으로 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "direct_route",
+                  "version": "0.6.0",
+                  "config_sha256": "c59ef14b8bb1137eaa9f43ab497ea82600baa59c4b14b05ce6de51302f20dd1c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:47:28Z",
+                "finished_at": "2026-11-05T12:48:08Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/3",
+          "relationship": "부분 결과",
+          "observed_scope": "직접 접근을 닫음·열음·다시 닫음으로 나눠 PASS·FAIL·PASS를 기록했다.",
+          "remaining_scope": "전체 API·관리 경로와 정상 대조까지 같은 정책으로 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/3/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/3/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/3/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "direct_route",
+                  "version": "0.6.0",
+                  "config_sha256": "c59ef14b8bb1137eaa9f43ab497ea82600baa59c4b14b05ce6de51302f20dd1c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:58:57Z",
+                "finished_at": "2026-11-05T12:59:06Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/4",
+          "relationship": "부분 결과",
+          "observed_scope": "직접 접근을 닫음·열음·다시 닫음으로 나눠 PASS·FAIL·PASS를 기록했다.",
+          "remaining_scope": "전체 API·관리 경로와 정상 대조까지 같은 정책으로 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/4/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/4/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/4/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "direct_route",
+                  "version": "0.6.0",
+                  "config_sha256": "c59ef14b8bb1137eaa9f43ab497ea82600baa59c4b14b05ce6de51302f20dd1c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:59:10Z",
+                "finished_at": "2026-11-05T12:59:49Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-02",
+          "relationship": "부분 결과",
+          "observed_scope": "키 없음·잘못된 키와 허용 키를 비교했다.",
+          "remaining_scope": "전달 신원 위조는 별도 시험이 필요하다.",
+          "original_statuses": []
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-04",
+          "relationship": "부분 결과",
+          "observed_scope": "엔진 직통 접근의 거부를 관측했다.",
+          "remaining_scope": "전체 API 경로·관리 권한은 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "전체 API·관리 경로와 정상 대조까지 같은 정책으로 확인해야 한다. 전달 신원 위조는 별도 시험이 필요하다. 전체 API 경로·관리 권한은 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-002",
+      "branch_index": 0,
+      "name": "경로 재작성 차이를 이용한 인증 우회",
+      "apply_when": "root_path 또는 proxy/Gateway 경로 재작성이 사용된다.",
+      "branch_sha256": "e4a5674119dd242c4fc52f98c203fc38d5942054304fab14791db3bd1e824bc1",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/13",
+          "relationship": "관련 관측",
+          "observed_scope": "선정 native 경로 호출 기록이 있다.",
+          "remaining_scope": "경로 재작성·정규화 우회와 최종 실행 경로는 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/13/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/13/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/13/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "route_record",
+                  "version": "0.2.0",
+                  "config_sha256": "0faeb823965cca2b71f854d7f287a7af108f894b7ef8275c0bc309c7d63305d0"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:06:51Z",
+                "finished_at": "2026-11-05T13:06:58Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-19",
+          "relationship": "관련 관측",
+          "observed_scope": "미지원 경로·필드의 거부를 관측했다.",
+          "remaining_scope": "경로 재작성 뒤 인증을 건너뛰는지 시험한 결과는 없다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "경로 재작성·정규화 우회와 최종 실행 경로는 확인하지 못했다. 경로 재작성 뒤 인증을 건너뛰는지 시험한 결과는 없다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-003",
+      "branch_index": 0,
+      "name": "추론용 자격을 이용한 관리 API 실행",
+      "apply_when": "관리 접점을 기본 조사하고, 진단 기능은 실제 등록·노출된 경로를 추가한다.",
+      "branch_sha256": "0c4c279ca816c95377499c5985817cdb8c34a7a630deea46e6f0b3b49549ce22",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/5",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 관리 API 호출 기록이 있다.",
+          "remaining_scope": "원문 security UNKNOWN·functional FAIL을 유지하며 허용 관리자와 비허용 주체를 추가 대조해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/5/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/5/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "FAIL",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/5/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "role_route",
+                  "version": "0.4.0",
+                  "config_sha256": "a3dd0de86fb21dcc1a2a5003eef013a4415ecf98c3de47980d7017278f71cce4"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:48:12Z",
+                "finished_at": "2026-11-05T12:48:18Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "원문 security UNKNOWN·functional FAIL을 유지하며 허용 관리자와 비허용 주체를 추가 대조해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-004",
+      "branch_index": 0,
+      "name": "전달 신원 위조를 통한 다른 사용자 권한 사용",
+      "apply_when": "앱·Gateway·프록시가 전달한 신원을 인가에 사용한다.",
+      "branch_sha256": "1a40c9a944838d4872369c165b12866e087418cf613b02645a2e20d97f2d0719",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-005",
+      "branch_index": 0,
+      "name": "모델 선택값 변경을 통한 비허용 모델 실행",
+      "apply_when": "모델 selector를 기본 확인하고 adapter/resolver는 지원·활성 조건에서 추가한다. 모델 사용 종료 시 이전 selector의 최종 실행 결과도 확인한다.",
+      "branch_sha256": "8c88c8a12050fad5d53630a9dc61e359a028a1fec21fded6c8e564df4e182010",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-b-phase1-status-20261105.json",
+          "source_sha256": "5bc828d06f15c023dae56043d1d8b0c4a6123298179de5eed290da2e11d2726e",
+          "source_url": "references/evidence/gpu-b-phase1-status-20261105.json",
+          "source_pointer": "/reused_evidence/14",
+          "relationship": "부분 결과",
+          "observed_scope": "과거 증거를 재사용한 기록이며 새 GPU 실행은 0건이다.",
+          "remaining_scope": "원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/reused_evidence/14/verdicts",
+              "value": {
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN",
+                "security": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/reused_evidence/14/whole_question_complete",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "원문 FAIL·UNKNOWN과 재사용 범위를 유지한다. 현 구성의 전체 권한·소비 범위를 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-005",
+      "branch_index": 1,
+      "name": "모델 별칭 변경을 통한 승인 대상 바꿔치기",
+      "apply_when": "서비스 이름·alias·worker에 실제 모델을 연결하는 경로가 있다. 단일 모델도 포함한다. 사용 종료·재매핑 후에도 alias의 현재 승인 대상과 실제 실행을 대조한다.",
+      "branch_sha256": "fad06790280838856fbf66a1aa0ee404416feb41988dc232aea23d851ad4e808",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-005",
+      "branch_index": 2,
+      "name": "daemon 접속으로 권한 밖 가중치 읽기",
+      "apply_when": "별도 weights daemon 또는 공유 모델 공급 구현을 사용한다. 기본 TP와 구분한다.",
+      "branch_sha256": "4de2249643f03fd9e8a09b56986aada5d939a4dd230776e599a7e21ae350967e",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-006",
+      "branch_index": 0,
+      "name": "다른 사용자의 저장 응답 조회·변경",
+      "apply_when": "저장 Responses/결과 객체의 조회·취소가 사용된다. vLLM store 설정과 request.store를 확인하며 R10 영속 job과 구분한다.",
+      "branch_sha256": "f8e3db3a6f402c24e2fb06b986456403c218db0d7b6cc35c51863808159c7020",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-007",
+      "branch_index": 0,
+      "name": "chat template 변경을 통한 입력 검사 우회",
+      "apply_when": "chat/template 변환이 수행된다. 요청 template·kwargs는 실제 수용 필드별로 추가한다.",
+      "branch_sha256": "83ee6e75cdc378f6ce343e24be73c58882c81e1998f04275dc3bf1770c2da072",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "automation-phase2-20261023.json",
+          "source_sha256": "030b1ce89b0877bc1486fca7547bc35c1ad31c0c7fa504e2f0c07583fb0209e9",
+          "source_url": "references/evidence/automation-phase2-20261023.json",
+          "source_pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/1",
+          "relationship": "부분 결과",
+          "observed_scope": "vLLM CPU 선정 실행의 원래 판정과 측정을 보존했다.",
+          "remaining_scope": "선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/1/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.3.0"
+                },
+                "executor": {
+                  "config_sha256": "e058a46a0a9f4571d3b9b4a42e8b0f1349ce4f8aeb0afa7e1850cf08fb4ebe7a",
+                  "name": "template_validation",
+                  "version": "0.1.0"
+                },
+                "finished_at": "2026-10-23T11:20:50Z",
+                "started_at": "2026-10-23T11:19:48Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/1/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-007",
+      "branch_index": 1,
+      "name": "모델 template의 위험 동작·비용 유발",
+      "apply_when": "서버 지정·processor/tokenizer·fallback 등 실제 선택된 공급 template가 renderer에서 소비된다.",
+      "branch_sha256": "589c01a36e8dd1b39348323e43c7316705fa130c0ba6772fda24eb093f02e090",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-008",
+      "branch_index": 0,
+      "name": "재사용 토큰 경로를 이용한 입력 검사 우회",
+      "apply_when": "해당 API의 dict/prompt_token_ids 지원·노출 경로에서 수용·전달 여부 또는 금지 정책의 거부·제거를 확인한다. PD 비활성만으로 제외하지 않는다.",
+      "branch_sha256": "41f3ed3b56e5c8db06bc3327beb4e52328dd4b961c5f2b419015dcd82f8a73c1",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-08-20261103.json",
+          "source_sha256": "6a90c3c138755f85e7af0d03508647e7bf3421831e7cfbc6fbeaef81858a1e4c",
+          "source_url": "references/evidence/gpu-a-REQ-08-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "원문의 UNKNOWN과 한정된 입력 profile을 유지한다. 전체 허용·금지 입력 및 최종 처리 경로를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "dec7dd60fe15145fcf26709af4ac6ab6a26bf36f04cd3870427a6f8915cdeef8"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:40:12Z",
+                "finished_at": "2026-11-03T11:40:13Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-08-20261103.json",
+          "source_sha256": "6a90c3c138755f85e7af0d03508647e7bf3421831e7cfbc6fbeaef81858a1e4c",
+          "source_url": "references/evidence/gpu-a-REQ-08-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "원문의 UNKNOWN과 한정된 입력 profile을 유지한다. 전체 허용·금지 입력 및 최종 처리 경로를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "dec7dd60fe15145fcf26709af4ac6ab6a26bf36f04cd3870427a6f8915cdeef8"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:50:28Z",
+                "finished_at": "2026-11-03T11:50:30Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-08-20261103.json",
+          "source_sha256": "6a90c3c138755f85e7af0d03508647e7bf3421831e7cfbc6fbeaef81858a1e4c",
+          "source_url": "references/evidence/gpu-a-REQ-08-20261103.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "원문의 UNKNOWN과 한정된 입력 profile을 유지한다. 전체 허용·금지 입력 및 최종 처리 경로를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "dec7dd60fe15145fcf26709af4ac6ab6a26bf36f04cd3870427a6f8915cdeef8"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:39:21Z",
+                "finished_at": "2026-11-03T11:39:21Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-19",
+          "relationship": "관련 관측",
+          "observed_scope": "선정 미지원 입력 필드의 거부를 관측했다.",
+          "remaining_scope": "허용 token 재사용 경로의 검사와 최종 소비는 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "원문의 UNKNOWN과 한정된 입력 profile을 유지한다. 전체 허용·금지 입력 및 최종 처리 경로를 확인해야 한다. 허용 token 재사용 경로의 검사와 최종 소비는 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-009",
+      "branch_index": 0,
+      "name": "잘못된 토큰 입력으로 공유 추론 서비스 방해",
+      "apply_when": "선정 endpoint가 token 또는 토큰화할 입력을 처리한다.",
+      "branch_sha256": "cbd6c31407c01d5ff3597a4fae9d59d29a6bd78f3fbcf693b3f1f29873f41640",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-09-20261103.json",
+          "source_sha256": "b1ff0680847d005b6fefa932570010d6ad5a3d9a22ca4316f55cb1d2ec2e121b",
+          "source_url": "references/evidence/gpu-a-REQ-09-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "토큰 오류 400과 정상 요청은 있으나 누적 비용·소비량은 미확인이다. embedding·멀티모달 분기와 구분한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.7.1+k8s.1",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:40:10Z",
+                "finished_at": "2026-11-03T11:40:10Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-09-20261103.json",
+          "source_sha256": "b1ff0680847d005b6fefa932570010d6ad5a3d9a22ca4316f55cb1d2ec2e121b",
+          "source_url": "references/evidence/gpu-a-REQ-09-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "토큰 오류 400과 정상 요청은 있으나 누적 비용·소비량은 미확인이다. embedding·멀티모달 분기와 구분한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.7.1+k8s.1",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:50:24Z",
+                "finished_at": "2026-11-03T11:50:26Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-09-20261103.json",
+          "source_sha256": "b1ff0680847d005b6fefa932570010d6ad5a3d9a22ca4316f55cb1d2ec2e121b",
+          "source_url": "references/evidence/gpu-a-REQ-09-20261103.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "토큰 오류 400과 정상 요청은 있으나 누적 비용·소비량은 미확인이다. embedding·멀티모달 분기와 구분한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.7.1+k8s.1",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:39:19Z",
+                "finished_at": "2026-11-03T11:39:19Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "토큰 오류 400과 정상 요청은 있으나 누적 비용·소비량은 미확인이다. embedding·멀티모달 분기와 구분한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-009",
+      "branch_index": 1,
+      "name": "지원 입력의 차원·정합성과 offset 유효 범위",
+      "apply_when": "선정 endpoint/입력 처리기가 embedding 또는 token/embedding 선택 mask를 실제 지원·수용하거나, 별도로 routed_experts_prompt_start 등 offset 파라미터를 수용할 때 추가한다. embedding은 값·차원/shape·필요 dtype·token/mask 대응을, offset은 embedding·관련 출력 활성 여부와 독립된 의미·형식·위치 범위를 확인한다. token·길이 기본 분기는 유지한다. 담당 CHK의 고유 추가 시험으로 선정하며 기존 SC 원문은 당시 범위로 보존한다.",
+      "branch_sha256": "5cf9c4c9bc45031aa337a888fe37a2bfe383314b60be8458b5e4d000462e8711",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-009",
+      "branch_index": 2,
+      "name": "멀티모달 입력 배치와 변환 정합성",
+      "apply_when": "이미지·오디오·비디오 또는 미리 계산한 멀티모달 embedding을 받는 경로에 적용한다. 일반 API가 미디어를 처리하는 경로와 render 결과·features를 다시 받는 분리형 경로를 각각 확인한다. 지원하지 않는 입력은 실제 거부 여부를 확인한다.",
+      "branch_sha256": "b32af88e5666cbe303fcb3a6aa65d1ad7adf378c1b5c5f2c139f1a05fb9880df",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-010",
+      "branch_index": 0,
+      "name": "생성 옵션 조합으로 실행기 예외 유발",
+      "apply_when": "API가 해당 sampling 옵션을 받는다. V2 개수 경계는 해당 processor 도달 시만 추가한다.",
+      "branch_sha256": "cf4f0c22382b4715ba887ecc94ee48eb2dcd83fb93cdb2a078f93e825cb107a1",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-10-20261103.json",
+          "source_sha256": "635469bb7ca0a359afeea4b0a296c178b25d51e3f35a451dd0a1cb9cc70f2507",
+          "source_url": "references/evidence/gpu-a-REQ-10-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "HTTP 응답만으로 하위 sampling·실행기 예외 방지를 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "sampling_validation",
+                  "version": "0.2.2",
+                  "config_sha256": "49bc44b6b3c671b21158e060cab84697a5cd0fd3a8fad2764a32bb9330c3954a"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:16:12Z",
+                "finished_at": "2026-11-03T11:16:19Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-10-20261103.json",
+          "source_sha256": "635469bb7ca0a359afeea4b0a296c178b25d51e3f35a451dd0a1cb9cc70f2507",
+          "source_url": "references/evidence/gpu-a-REQ-10-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "HTTP 응답만으로 하위 sampling·실행기 예외 방지를 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "sampling_validation",
+                  "version": "0.2.2",
+                  "config_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": null,
+                "finished_at": null,
+                "abort_reason": "EXECUTOR_FAILURE"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-18",
+          "relationship": "관련 관측",
+          "observed_scope": "선정 생성·스트리밍 입력을 관측했다.",
+          "remaining_scope": "유효하지 않은 생성 옵션 조합과 하위 실행기 예외는 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "HTTP 응답만으로 하위 sampling·실행기 예외 방지를 확인하지 못했다. 유효하지 않은 생성 옵션 조합과 하위 실행기 예외는 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-010",
+      "branch_index": 1,
+      "name": "구조화 출력의 크기·깊이·복잡도 제한",
+      "apply_when": "선정 API/backend가 schema·grammar·structural_tag 등 구조화 출력 입력을 실제 지원·수용할 때 추가한다. 해당 입력의 제한 검사와 고비용 재귀 변환·grammar 변환/컴파일·모델 제출 경계를 확인한다. 담당 CHK의 고유 추가 시험으로 선정하며 기존 SC 원문은 당시 범위로 보존한다.",
+      "branch_sha256": "c6329636974e472eb57968ae5c4e3ddc1cebef5bf9a061e58c219af78f6024ea",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-010",
+      "branch_index": 2,
+      "name": "구조화 출력·tool 선택의 상호 조합 검증",
+      "apply_when": "선정 API가 구조화 출력과 tools/tool_choice의 조합을 실제 지원·수용할 때 추가한다. 해당 판본/API/backend가 허용한 조합과 비허용 조합을 같은 정상 tool/schema로 대조한다. 담당 CHK의 고유 추가 시험으로 선정하며 기존 SC 원문은 당시 범위로 보존한다.",
+      "branch_sha256": "b4ca1a491c1761906a4caf2afe42b0232d7815b5ae2b568a696f9b4b4dd5f873",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-011",
+      "branch_index": 0,
+      "name": "요청 ID 충돌을 이용한 결과·취소 대상 혼동",
+      "apply_when": "일반/동시/streaming 요청을 확인하고 외부 ID·child를 사용하면 그 분기를 추가한다.",
+      "branch_sha256": "a27ce3b39c871d39832f0871ddf5d42ecb068a2acd76d059b0dd7006460132c6",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261106.json",
+          "source_sha256": "4b2cd9d547585f06d03434d7c2a05fa84cf58dd59ae66e8e406ce8007a24d16e",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261106.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "새 결과 ID·스트리밍 동시 요청의 PASS 기록이다.",
+          "remaining_scope": "선정 조건 밖의 전체 충돌·취소·결과 귀속은 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "executor": {
+                  "config_sha256": "0724cf3519af0d9205e4193384ab63500fb682bf8fafddfed77cd338ab333e53",
+                  "name": "request_binding",
+                  "version": "0.2.0"
+                },
+                "finished_at": "2026-11-06T05:33:32Z",
+                "started_at": "2026-11-06T05:33:21Z",
+                "status": "COMPLETED"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "automation-phase3-20261023.json",
+          "source_sha256": "b65b4742cdc94e374f84515ccc4db4a7e0e5aa5a464e14253ced0ef6a4d9791a",
+          "source_url": "references/evidence/automation-phase3-20261023.json",
+          "source_pointer": "/attempts/0/checks/2",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU의 선정 native INFO·수집기·표시 또는 요청 귀속을 관측했다.",
+          "remaining_scope": "기업 SIEM과 모든 수집·변환 경로 및 분기 전체의 증거는 확보하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/attempts/0/checks/2/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.0"
+                },
+                "executor": {
+                  "config_sha256": "368716a1a8aba9355195686e563c912fc52b287c60082b3f42f79181a2a599cd",
+                  "name": "request_binding",
+                  "version": "0.1.0"
+                },
+                "finished_at": "2026-10-23T12:07:29Z",
+                "started_at": "2026-10-23T12:06:20Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/attempts/0/checks/2/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "PASS"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-18",
+          "relationship": "관련 관측",
+          "observed_scope": "정상·스트리밍 요청을 관측했다.",
+          "remaining_scope": "ID 충돌과 취소·지연 결과의 귀속은 시험하지 않았다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "선정 조건 밖의 전체 충돌·취소·결과 귀속은 추가 확인해야 한다. 기업 SIEM과 모든 수집·변환 경로 및 분기 전체의 증거는 확보하지 못했다. ID 충돌과 취소·지연 결과의 귀속은 시험하지 않았다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-012",
+      "branch_index": 0,
+      "name": "취소 뒤 GPU 작업·출력·참조 잔존",
+      "apply_when": "일반/streaming의 대기·계산·출력 단계에서 취소·연결 종료·timeout·stop 종료를 확인한다.",
+      "branch_sha256": "34b6c248a9a5ae025a4b2ccfdd730a5dfd941555d48c426027eb68677c0aaa8d",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "lab-activation-cpu-20261102.json",
+          "source_sha256": "f4ce878f45a207e29ea81c6ca87dc3eca5071021213e7e4d02cdcfaf27a49dfd",
+          "source_url": "references/evidence/lab-activation-cpu-20261102.json",
+          "source_pointer": "/results/13",
+          "relationship": "관련 관측",
+          "observed_scope": "외부 ID를 재사용한 두 요청이 정상 응답했다.",
+          "remaining_scope": "지연된 worker 결과·취소가 다른 요청으로 전달되는지는 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/13/activation_scope_complete",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "지연된 worker 결과·취소가 다른 요청으로 전달되는지는 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-012",
+      "branch_index": 1,
+      "name": "자동 재시도로 중복 실행·결과 혼입",
+      "apply_when": "실제 추론 retry 또는 복수 시도가 있다. 취득 SDK retry와 구분한다.",
+      "branch_sha256": "3d33352802a732b0a39bd4ebeeb36fc5cfaf19dd4abc1203d690c1667732af47",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-013",
+      "branch_index": 0,
+      "name": "반환 옵션·오류를 이용한 입력·내부 정보 노출",
+      "apply_when": "일반/stream 응답·오류를 기본 확인하고 반환 옵션은 지원·수용/거부와 실제 필드별로 추가한다.",
+      "branch_sha256": "bb8cf7e5245ac168e39a67de0f5c1e2e388deb5d3cbac4682229ceba22435baf",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/7",
+          "relationship": "부분 결과",
+          "observed_scope": "반환 정보 시험의 FAIL 기록이다.",
+          "remaining_scope": "실제 노출 필드·승인 반환 정책·후속 수정 결과를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/7/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/7/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/7/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "response_content",
+                  "version": "0.2.1+k8s.1",
+                  "config_sha256": "cd77b68a9b86c61655ae73baa974d76bc9c72c46a3769ffd430fbbdbefc109d2"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T12:48:23Z",
+                "finished_at": "2026-11-05T12:48:34Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "automation-phase2-20261023.json",
+          "source_sha256": "030b1ce89b0877bc1486fca7547bc35c1ad31c0c7fa504e2f0c07583fb0209e9",
+          "source_url": "references/evidence/automation-phase2-20261023.json",
+          "source_pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/2",
+          "relationship": "부분 결과",
+          "observed_scope": "vLLM CPU 선정 실행의 원래 판정과 측정을 보존했다.",
+          "remaining_scope": "선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/2/execution",
+              "value": {
+                "abort_reason": null,
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.3.0"
+                },
+                "executor": {
+                  "config_sha256": "dd74fdae962562208ced8e9dd97dc81a29f042a7e8cf1b059b0ac128f3f807c2",
+                  "name": "response_content",
+                  "version": "0.1.0"
+                },
+                "finished_at": "2026-10-23T11:21:21Z",
+                "started_at": "2026-10-23T11:20:52Z",
+                "status": "COMPLETED"
+              }
+            },
+            {
+              "pointer": "/actual_cpu_runs/cases/0/selected_measurements/checks/2/verdicts",
+              "value": {
+                "functional": "PASS",
+                "performance": "UNKNOWN",
+                "security": "FAIL"
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "실제 노출 필드·승인 반환 정책·후속 수정 결과를 확인해야 한다. 선정 정책·모델에 한정된다. 전체 분기 조건·정상 대조와 원 증거 묶음을 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-014",
+      "branch_index": 0,
+      "name": "공유 권한을 가진 worker 침해의 영향 확대",
+      "apply_when": "core·worker의 실제 UID·protocol·공유 실행 신뢰 범위를 확인한다. 같은 UID/pickle 내부를 독립 인가 경계로 가정하지 않는다.",
+      "branch_sha256": "f2a86a883e991f56f968753d52d23a71ed8f8611491e9e4c3e4dabda75000234",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-014",
+      "branch_index": 1,
+      "name": "GPU 프로세스 통신의 도청·변조",
+      "apply_when": "rank 간 local collective 또는 별도 다중 노드 전송을 사용한다. transport별로 분리한다.",
+      "branch_sha256": "d784917241a5d5bef3b4a5b1c3793b22b4d40a87cba702d777d5999019958713",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-014",
+      "branch_index": 2,
+      "name": "PD 전송 참조 조작으로 KV·완료 상태 오연결",
+      "apply_when": "PD 또는 KV transfer connector가 실제 지원·선택된다. 실제 사용하는 다중 프로세스·분산 실행과 별개이며 prompt_token_ids 입력 경로 전체와 동일시하지 않는다.",
+      "branch_sha256": "e55ae30b7b5443354b4706f76079ae276759110cc7756c80e592123aa67c10dc",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-015",
+      "branch_index": 0,
+      "name": "cache salt 사칭을 통한 금지된 KV 공유",
+      "apply_when": "KV/prefix cache를 재사용하며 신뢰 집단별 공유 관계를 정해야 한다.",
+      "branch_sha256": "c251cd26d83dcba8ebf024838fc5ea7f84891b7409df29c53bf7088bb1373160",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "engine-callback-cpu-20261102.json",
+          "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+          "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+          "source_pointer": "/results/1",
+          "relationship": "부분 결과",
+          "observed_scope": "요청 salt를 직접 지정한 CPU 비교가 있다.",
+          "remaining_scope": "인증 주체와 salt의 강제 결합은 이 결과만으로 확인되지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/1/status",
+              "value": "COMPLETED"
+            },
+            {
+              "pointer": "/results/1/full_scope",
+              "value": false
+            },
+            {
+              "pointer": "/results/1/normal",
+              "value": true
+            },
+            {
+              "pointer": "/results/1/facts/full_scope",
+              "value": false
+            }
+          ]
+        },
+        {
+          "source_file": "engine-callback-cpu-20261102.json",
+          "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+          "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+          "source_pointer": "/results/5",
+          "relationship": "부분 결과",
+          "observed_scope": "Gateway가 주체별 salt를 부여한 CPU 비교가 있다.",
+          "remaining_scope": "원문 normal=false를 유지하며 정상 대조 실패 원인과 허용 공유 정책을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/5/status",
+              "value": "COMPLETED"
+            },
+            {
+              "pointer": "/results/5/full_scope",
+              "value": true
+            },
+            {
+              "pointer": "/results/5/normal",
+              "value": false
+            },
+            {
+              "pointer": "/results/5/facts/full_scope",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/9",
+          "relationship": "부분 결과",
+          "observed_scope": "선정 salt 경계의 보안 PASS 기록이다.",
+          "remaining_scope": "functional UNKNOWN을 유지하고 정상 대조와 주체별 허용 공유를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/9/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/9/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/9/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.4",
+                  "config_sha256": "6f41f9b327c4d98cb3a68c4eabd3d246f478076bf4c70ff3e1da58a5be62403c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T14:08:46Z",
+                "finished_at": "2026-11-05T14:08:59Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "인증 주체와 salt의 강제 결합은 이 결과만으로 확인되지 않는다. 원문 normal=false를 유지하며 정상 대조 실패 원인과 허용 공유 정책을 확인해야 한다. functional UNKNOWN을 유지하고 정상 대조와 주체별 허용 공유를 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-016",
+      "branch_index": 0,
+      "name": "캐시 키 충돌·누락을 이용한 다른 입력 재사용",
+      "apply_when": "cache key/hash를 이용해 입력·상태를 재사용한다. LoRA·media 문맥은 활성 시 추가한다.",
+      "branch_sha256": "98a87bcd129078268506c640ccc9f0b4a499ba9f27ffcbab02c12bd698e21bc8",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "engine-callback-cpu-20261102.json",
+          "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+          "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+          "source_pointer": "/results/2",
+          "relationship": "관련 관측",
+          "observed_scope": "CPU에서 cache_salt 변경에 따른 키 차이를 관측했다.",
+          "remaining_scope": "전체 입력·모델·세대·미디어 문맥을 포함한 키와 실제 재사용을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/2/status",
+              "value": "COMPLETED"
+            },
+            {
+              "pointer": "/results/2/full_scope",
+              "value": true
+            },
+            {
+              "pointer": "/results/2/normal",
+              "value": true
+            },
+            {
+              "pointer": "/results/2/facts/full_scope",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "192c587697d570fddd5424988740069b682355c9c5dec1d6d51a1443aa00c11b"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T10:53:59Z",
+                "finished_at": "2026-11-03T10:54:02Z",
+                "abort_reason": "ENGINE_SENSOR_CALLBACK_SCOPE_INCOMPLETE"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "6776ab57809724969ca42f625c58403b1c910aa87de9873d54e747d7b2da4a3c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:04:00Z",
+                "finished_at": "2026-11-03T11:04:12Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "24d93d8aa046ab01850db8d32a41b7bb5e90947b5db6924402a52cd787ebe7ce"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:23:14Z",
+                "finished_at": "2026-11-03T11:23:30Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "전체 입력·모델·세대·미디어 문맥을 포함한 키와 실제 재사용을 확인해야 한다. 공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-016",
+      "branch_index": 1,
+      "name": "미디어 변환 문맥에 맞는 캐시 재사용",
+      "apply_when": "미디어 처리 결과를 전처리·embedding·KV 등 캐시로 재사용하는 경로에 적용한다. 이미지·오디오·비디오는 지원하는 경로별로 선정하며 캐시마다 실제 사용하는 자료와 변환 조건을 확인한다.",
+      "branch_sha256": "eba9b5610b3a4e3ba6e01d58734d877b6d1e8c5357245efae3f455abadf9f613",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "192c587697d570fddd5424988740069b682355c9c5dec1d6d51a1443aa00c11b"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T10:53:59Z",
+                "finished_at": "2026-11-03T10:54:02Z",
+                "abort_reason": "ENGINE_SENSOR_CALLBACK_SCOPE_INCOMPLETE"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "6776ab57809724969ca42f625c58403b1c910aa87de9873d54e747d7b2da4a3c"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:04:00Z",
+                "finished_at": "2026-11-03T11:04:12Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-16-20261103.json",
+          "source_sha256": "9e23a0a86f7b67255ba3e31a135000c8e82c7e0e32f2326af2e524a3e28a4911",
+          "source_url": "references/evidence/gpu-a-REQ-16-20261103.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "GPU cache 키·재사용 비교의 UNKNOWN·FAIL 기록을 함께 연결했다.",
+          "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "FAIL",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "24d93d8aa046ab01850db8d32a41b7bb5e90947b5db6924402a52cd787ebe7ce"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:23:14Z",
+                "finished_at": "2026-11-03T11:23:30Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "공유 텍스트 prefix가 미디어 객체 hit로 집계됐을 가능성이 있어 원문 FAIL을 보존하고 실제 객체 재사용 여부를 추가 판독해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-016",
+      "branch_index": 2,
+      "name": "거부 후 mirrored LRU 캐시 복구",
+      "apply_when": "앞단 sender와 Core receiver가 상태를 나누어 보관하는 mirrored LRU 멀티모달 캐시를 실제 사용하는 경우에 적용한다. processor-only·비사용·SHM 등 다른 캐시는 각 구현의 복구 계약을 확인한다.",
+      "branch_sha256": "96ac2ec82dbc0e1447b57bf15bfd414c3a5d239615ac7f28e27c64befc773686",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-017",
+      "branch_index": 0,
+      "name": "캐시 적중 시간으로 비공개 프롬프트 추정",
+      "apply_when": "공유 backend·비공개 prefix와 시간/상태 관측 경로를 확인한다. 관측 능력·보호 정책이 미정이면 조사 후 적용을 판단한다.",
+      "branch_sha256": "4878dfb59b34a5b00aa632a9dc782cd1498436b4f068bdfa2c7e0ab78276f419",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "engine-callback-cpu-20261102.json",
+          "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+          "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+          "source_pointer": "/results/3",
+          "relationship": "부분 결과",
+          "observed_scope": "CPU 시간 표본에서 대조군·교차군을 비교했다.",
+          "remaining_scope": "GPU 표본과 합산하지 않고 주체별 반복·통계 조건과 정상 성능을 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/3/status",
+              "value": "COMPLETED"
+            },
+            {
+              "pointer": "/results/3/full_scope",
+              "value": true
+            },
+            {
+              "pointer": "/results/3/normal",
+              "value": true
+            },
+            {
+              "pointer": "/results/3/facts/full_scope",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-17-20261103.json",
+          "source_sha256": "766b5d0872b69fafa25186f391e2bf516355d757a54a78b3de12e2c820821f7f",
+          "source_url": "references/evidence/gpu-a-REQ-17-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "선정 GPU 시간 표본의 결과이며 CPU 표본과 합산하지 않는다. 전체 정책·반복 조건을 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "8151be01415ac5ace04212199a87ee05ddf87039ec1d5e1b36194d96350cb2b7"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T10:51:17Z",
+                "finished_at": "2026-11-03T10:52:21Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "GPU 표본과 합산하지 않고 주체별 반복·통계 조건과 정상 성능을 확인해야 한다. 선정 GPU 시간 표본의 결과이며 CPU 표본과 합산하지 않는다. 전체 정책·반복 조건을 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-018",
+      "branch_index": 0,
+      "name": "재사용 배치 자리의 토큰 제한 상태 혼입",
+      "apply_when": "실제로 V1 runner를 사용하고 CPU mask가 할당된 condense 경로에 도달할 때. A 제한 요청 종료/이동 뒤 B의 동일 slot 재사용을 확인한다.",
+      "branch_sha256": "5dde5402f19ea4e49c0720e2c084c4a1d07f1fb92f977b15e2e5ce8e406a652e",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "engine-callback-cpu-20261102.json",
+          "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+          "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+          "source_pointer": "/results/4",
+          "relationship": "부분 결과",
+          "observed_scope": "V1 슬롯 재사용과 출력 동작을 관측했다.",
+          "remaining_scope": "선정 슬롯의 모든 제한 상태와 정상 대조를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/results/4/status",
+              "value": "COMPLETED"
+            },
+            {
+              "pointer": "/results/4/full_scope",
+              "value": true
+            },
+            {
+              "pointer": "/results/4/normal",
+              "value": true
+            },
+            {
+              "pointer": "/results/4/facts/full_scope",
+              "value": true
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-REQ-18-20261103.json",
+          "source_sha256": "f549fdcf1e5ab5f2137a431b07859a86d27872cf989f4b8163250e6005ca5a73",
+          "source_url": "references/evidence/gpu-a-REQ-18-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "V1 경로의 결과다. V2 실행과 분리하고 제한 상태·정상 대조를 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.1",
+                  "config_sha256": "d0fa5d1059af845c43b51abdd9b992bb2c92b717e7c102a0eb4a0d95be547abc"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T10:54:27Z",
+                "finished_at": "2026-11-03T10:54:31Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "선정 슬롯의 모든 제한 상태와 정상 대조를 추가 확인해야 한다. V1 경로의 결과다. V2 실행과 분리하고 제한 상태·정상 대조를 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-018",
+      "branch_index": 1,
+      "name": "재사용 배치 자리의 토큰 제한 상태 혼입",
+      "apply_when": "실제로 V2 runner가 선택되고 해당 sampling 옵션이 소비될 때. slot·count/flag·staged write와 B의 무제한 정상 대조를 확인한다. V1 결과를 전용하지 않는다.",
+      "branch_sha256": "73d182a3148bbb5acc73cfe198401df23c0d91c43198ff510ed9b61c82b84e67",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-18-20261103.json",
+          "source_sha256": "f549fdcf1e5ab5f2137a431b07859a86d27872cf989f4b8163250e6005ca5a73",
+          "source_url": "references/evidence/gpu-a-REQ-18-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "V2 수동 fixture의 기존 결과다.",
+          "remaining_scope": "원문 UNKNOWN을 유지한다. V1 결과로 V2를 충족 처리하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "manual-entry",
+                  "version": "0.5.0",
+                  "config_sha256": "d8dda5f1bb47190fdf53371e47fa4f7f91452b01a7d6526de7922b3038dada56",
+                  "default_judge": "declared"
+                },
+                "adapter": null,
+                "started_at": "2026-11-03T12:17:27.176522Z",
+                "finished_at": "2026-11-03T12:20:58Z",
+                "abort_reason": null,
+                "operator": {
+                  "by": "Codex / user-authorized BYUL A lab observation",
+                  "at": "2026-11-03T12:20:58Z"
+                },
+                "override_reason": "Automatic native source/transport contract unavailable; preserve explicitly scoped actual GPU observations as manual evidence."
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "원문 UNKNOWN을 유지한다. V1 결과로 V2를 충족 처리하지 않는다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-019",
+      "branch_index": 0,
+      "name": "GPU 메모리 경계 오류로 다른 요청 자료 노출",
+      "apply_when": "선택한 kernel/backend·dtype·shape 또는 실제 CUDA Graph 경로를 확인한다. 각 경로를 서로 대체하지 않는다.",
+      "branch_sha256": "03a7d66c9660bf6c79a5ad4252d157bad9453a9b1aa104a1da6a221576f93df6",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-19-20261103.json",
+          "source_sha256": "f6882443406145d03e61b8767cf5d0cdb66d9f2d96c2689498d522c7ee77ee77",
+          "source_url": "references/evidence/gpu-a-REQ-19-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "커널 fixture 관측이며 실제 서빙 도달·초기화 전 읽기·compute-sanitizer 증거는 없다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "manual-entry",
+                  "version": "0.5.0",
+                  "config_sha256": "b0292f9bcd51bdc041a21faab587fe73a474f1dc15bb827e114faabd90caa4ec",
+                  "default_judge": "declared"
+                },
+                "adapter": null,
+                "started_at": "2026-11-03T12:17:27.176522Z",
+                "finished_at": "2026-11-03T12:20:58Z",
+                "abort_reason": null,
+                "operator": {
+                  "by": "Codex / user-authorized BYUL A lab observation",
+                  "at": "2026-11-03T12:20:58Z"
+                },
+                "override_reason": "Automatic native source/transport contract unavailable; preserve explicitly scoped actual GPU observations as manual evidence."
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/11",
+          "relationship": "부분 결과",
+          "observed_scope": "커널 fixture의 UNKNOWN·cold PASS 기록이다.",
+          "remaining_scope": "실제 서빙 경로 도달·초기화 전 읽기·전체 GPU 메모리 범위는 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/11/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/11/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/11/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.2",
+                  "config_sha256": "bae8cf58ef6c0ad50aa466286e197e0d78831ea166eb74c8b44624946199d27b"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:13:37Z",
+                "finished_at": "2026-11-05T13:13:41Z",
+                "abort_reason": "ENGINE_SENSOR_CALLBACK_SCOPE_INCOMPLETE"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/12",
+          "relationship": "부분 결과",
+          "observed_scope": "커널 fixture의 UNKNOWN·cold PASS 기록이다.",
+          "remaining_scope": "실제 서빙 경로 도달·초기화 전 읽기·전체 GPU 메모리 범위는 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/12/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/12/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/12/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.3",
+                  "config_sha256": "3d6479ff830c97f90e7a00af39d8a13639c365245139df57ca2f2c481c871f88"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:50:56Z",
+                "finished_at": "2026-11-05T13:50:59Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "커널 fixture 관측이며 실제 서빙 도달·초기화 전 읽기·compute-sanitizer 증거는 없다. 실제 서빙 경로 도달·초기화 전 읽기·전체 GPU 메모리 범위는 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-020",
+      "branch_index": 0,
+      "name": "GPU 메모리 경계 오류로 다른 요청 자료 노출",
+      "apply_when": "V1 runner의 해당 CUDA Graph mode가 실제 활성일 때. 현재 입력 갱신·출력 소비와 buffer 수명을 확인한다.",
+      "branch_sha256": "089771858b6e1695cc5ce79a6ec659b65e8f6d1f9f40c17dcd5cbe178086ea97",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-020",
+      "branch_index": 1,
+      "name": "GPU 메모리 경계 오류로 다른 요청 자료 노출",
+      "apply_when": "V2 runner의 해당 CUDA Graph mode가 실제 활성일 때. 선정 caller/graph manager의 갱신·출력 소비 동기화를 확인한다.",
+      "branch_sha256": "b28501fd6ac99147b1647ba338873ad5c9166146160d2c8bd96b9cd703f4b9b9",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-REQ-20-20261103.json",
+          "source_sha256": "76a115dd39eb3bea87dc12c6923f0952db04e2bb63eff1a3e708b5cc5ae8ba7e",
+          "source_url": "references/evidence/gpu-a-REQ-20-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "V2 Graph descriptor A/B와 ARM SNorm 수동 fixture를 관측했다.",
+          "remaining_scope": "실제 비동기 취소·요청 수명주기와 서빙 도달은 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "manual-entry",
+                  "version": "0.5.0",
+                  "config_sha256": "eb9381fd1f883338b71cf2f6a96763be9843dda957ba6d1d3103a8933ba5d974",
+                  "default_judge": "declared"
+                },
+                "adapter": null,
+                "started_at": "2026-11-03T12:17:27.176522Z",
+                "finished_at": "2026-11-03T12:20:59Z",
+                "abort_reason": null,
+                "operator": {
+                  "by": "Codex / user-authorized BYUL A lab observation",
+                  "at": "2026-11-03T12:20:59Z"
+                },
+                "override_reason": "Automatic native source/transport contract unavailable; preserve explicitly scoped actual GPU observations as manual evidence."
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/14",
+          "relationship": "부분 결과",
+          "observed_scope": "V2 Graph 비활성·활성 조건을 나눠 관측했다.",
+          "remaining_scope": "실제 요청·취소·비동기 수명주기의 전체 경로를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/14/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/14/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/14/evidence/0/execution",
+              "value": {
+                "status": "ABORTED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.3",
+                  "config_sha256": "8879397114626ce3dcedfecb97b6b9f46432fe56de68d2152a07a6d441c2d983"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:52:33Z",
+                "finished_at": "2026-11-05T13:52:36Z",
+                "abort_reason": "ENGINE_SENSOR_CALLBACK_SCOPE_INCOMPLETE"
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-dev1-phase2-20261105.json",
+          "source_sha256": "e011da5feacd295a118057b16dc0e8dc8dd7fa599a338b785b1c01c2227ad9ff",
+          "source_url": "references/evidence/gpu-a-dev1-phase2-20261105.json",
+          "source_pointer": "/runs/15",
+          "relationship": "부분 결과",
+          "observed_scope": "V2 Graph 비활성·활성 조건을 나눠 관측했다.",
+          "remaining_scope": "실제 요청·취소·비동기 수명주기의 전체 경로를 추가 확인해야 한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/15/whole_question_complete",
+              "value": false
+            },
+            {
+              "pointer": "/runs/15/results/0/verdicts",
+              "value": {
+                "security": "PASS",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/15/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "engine_sensor",
+                  "version": "0.1.3",
+                  "config_sha256": "967d2f3ec098d6317dbc2bebbbda3afc4c96ba3c9f98cb927ea8456ef9787105"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-05T13:54:17Z",
+                "finished_at": "2026-11-05T13:54:20Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "실제 비동기 취소·요청 수명주기와 서빙 도달은 추가 확인해야 한다. 실제 요청·취소·비동기 수명주기의 전체 경로를 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-021",
+      "branch_index": 0,
+      "name": "GPU 메모리 경계 오류로 다른 요청 자료 노출",
+      "apply_when": "선정 TP communicator가 CUDA Graph 재실행용 buffer/IPC handle을 실제 등록·참조할 때. 해당 backend의 등록·소유자·세대·GPU 완료·참조 해제와 재등록 경로를 확인한다.",
+      "branch_sha256": "7ee887fe245006d4b58e0ddb1665a4d39b5bae1524fb42af47de04813b9f83e1",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-REQ-021",
+      "branch_index": 1,
+      "name": "GPU 프로세스 통신의 도청·변조",
+      "apply_when": "선정 TP graph/communicator에서 rank 간 buffer/IPC handle의 등록·교환·참조 경로를 실제 사용할 때. local collective와 다중 노드 transport의 등록·수명 증거를 각각 확인한다.",
+      "branch_sha256": "d863af935aced6d5bbf0b3dab47fdd350dd2ce8599f788de8a0dd7429f6499b7",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-001",
+      "branch_index": 0,
+      "name": "제출 권한으로 자기 모델의 승인 기록 위조",
+      "apply_when": "공급물 제출·저장·승인 경로를 확인한다. 승인 도구 부재도 미확인으로 남긴다.",
+      "branch_sha256": "4ed10017f21d8ca44c2d69add628542d2688123bd3e2556536d459f209ea64b5",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-002",
+      "branch_index": 0,
+      "name": "제한된 배포 계정의 운영 환경·모델 변경",
+      "apply_when": "모델×환경별 배포·승격 접점이 있다.",
+      "branch_sha256": "234806ef65e43dea5fb7c34bde9b41c69c9450643b5f279f3a9867569ef33123",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-003",
+      "branch_index": 0,
+      "name": "승인에서 빠진 하위 자료로 모델 동작 변경",
+      "apply_when": "모델 config·tokenizer 등 실제 소비 공급원을 확인한다. secondary source·resolver·redirect는 사용 시 추가한다.",
+      "branch_sha256": "baf885d16a1a6e97fdc34a3870ebe60c122b28cf2376db39c973364920158e75",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-SUP-03-20261103.json",
+          "source_sha256": "ea3a67c0518ed776d00bae6533e711ee016eaef12124bc5c0e9041eadce40c98",
+          "source_url": "references/evidence/gpu-a-SUP-03-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "선정 template 해시 관측이며 승인한 모든 하위 자료의 소비까지 확인하지 못했다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "template_validation",
+                  "version": "0.1.0",
+                  "config_sha256": "a47e8751a75d316ef86d77a17284db68ca28ebb720725f8979c09a366f552df6"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:30:32Z",
+                "finished_at": "2026-11-03T11:30:34Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "선정 template 해시 관측이며 승인한 모든 하위 자료의 소비까지 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-004",
+      "branch_index": 0,
+      "name": "이미지 tag·시작 명령 변경으로 코드 바꿔치기",
+      "apply_when": "이미지 또는 실제 실행 패키지·entrypoint를 선택해 배포한다.",
+      "branch_sha256": "ba024c2386052990ca92a059e2e7f885250f5fe8c2f5e6aa5c648e2a18b03386",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-005",
+      "branch_index": 0,
+      "name": "승인 뒤 파일·경로 교체로 다른 모델 로딩",
+      "apply_when": "승인·검사 후 실제 파일을 읽는다. redirect/symlink/mount는 실제 사용 시 추가한다.",
+      "branch_sha256": "7d88ae5449cef49ce2de267d70f518e2b9b636c913ceb02a23d8c3a260747ef9",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-06",
+          "relationship": "부분 결과",
+          "observed_scope": "/models의 쓰기 거부를 관측했다.",
+          "remaining_scope": "승인 뒤 교체·경로 바꿔치기와 최종 모델 소비는 확인하지 못했다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "승인 뒤 교체·경로 바꿔치기와 최종 모델 소비는 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-006",
+      "branch_index": 0,
+      "name": "가중치 누락·변환 변경으로 승인과 다른 모델 제공",
+      "apply_when": "선정 모델을 worker에 적재한다. 양자화·mapper·후처리·live reload는 실제 선택 조건으로 구분한다.",
+      "branch_sha256": "03f43b724a171df793c68a48d210ce3e4d233bf0e55d0fbf2285a82de818c5d4",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-006",
+      "branch_index": 1,
+      "name": "가중치 payload 교체로 모델·세대 혼입",
+      "apply_when": "공유·원격 weights의 model·rank·generation·layout·payload를 선택·적재한다.",
+      "branch_sha256": "a7c824c0fe72720b8224b5bc17524ebc43ca1945520f1464f658e2bba3b3375c",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-007",
+      "branch_index": 0,
+      "name": "공유 컴파일 캐시 변조를 통한 코드 실행",
+      "apply_when": "유효 compile/AOT·파생 cache의 생성·읽기 경로를 조사한다. 기본 비활성이나 safetensors 정책만으로 제외하지 않는다.",
+      "branch_sha256": "641612a512afecbfc3fa17cba057ed84a9ce2e9299017f967711fc727b1f5357",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-11",
+          "relationship": "관련 관측",
+          "observed_scope": "정상 요청의 경보와 캐시 동작을 관측했다.",
+          "remaining_scope": "비허용 작성자의 캐시 변조와 소비는 시험하지 않았다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "비허용 작성자의 캐시 변조와 소비는 시험하지 않았다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-008",
+      "branch_index": 0,
+      "name": "요청의 코드 버전 변경으로 비승인 모듈 로딩",
+      "apply_when": "기본 금지 정책의 endpoint에서 code_revision/mm kwargs 필드가 거부·제거되는지 확인한다. MM 비사용 설정만으로 전달 거부를 추정하지 않는다.",
+      "branch_sha256": "e7a1374b985695d1819ebc927a35b45f5d0192abbdf7f8dd46b60e7a3293cd46",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "gpu-a-SUP-08-20261103.json",
+          "source_sha256": "870f35827208ea3e5a999af6000feefafbe8888c35337ccb9c3e6ecdb9777c6d",
+          "source_url": "references/evidence/gpu-a-SUP-08-20261103.json",
+          "source_pointer": "/runs/0",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "code 선택 요청의 응답을 관측했으나 최종 소비를 확인하지 못한 UNKNOWN 기록을 유지한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/0/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/0/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:40:15Z",
+                "finished_at": "2026-11-03T11:40:15Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-SUP-08-20261103.json",
+          "source_sha256": "870f35827208ea3e5a999af6000feefafbe8888c35337ccb9c3e6ecdb9777c6d",
+          "source_url": "references/evidence/gpu-a-SUP-08-20261103.json",
+          "source_pointer": "/runs/1",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "code 선택 요청의 응답을 관측했으나 최종 소비를 확인하지 못한 UNKNOWN 기록을 유지한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/1/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "PASS",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/1/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:50:32Z",
+                "finished_at": "2026-11-03T11:50:33Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "gpu-a-SUP-08-20261103.json",
+          "source_sha256": "870f35827208ea3e5a999af6000feefafbe8888c35337ccb9c3e6ecdb9777c6d",
+          "source_url": "references/evidence/gpu-a-SUP-08-20261103.json",
+          "source_pointer": "/runs/2",
+          "relationship": "부분 결과",
+          "observed_scope": "단일 L4의 선정 경로 결과를 연결했다. 정확한 실행 조건·판정은 각 원문을 따른다.",
+          "remaining_scope": "code 선택 요청의 응답을 관측했으나 최종 소비를 확인하지 못한 UNKNOWN 기록을 유지한다.",
+          "original_statuses": [
+            {
+              "pointer": "/runs/2/results/0/verdicts",
+              "value": {
+                "security": "UNKNOWN",
+                "functional": "UNKNOWN",
+                "performance": "UNKNOWN"
+              }
+            },
+            {
+              "pointer": "/runs/2/evidence/0/execution",
+              "value": {
+                "status": "COMPLETED",
+                "executor": {
+                  "name": "input_validation",
+                  "version": "0.9.0",
+                  "config_sha256": "09921b9096e7eb134455b68d842fc9a3c3939cf8a6759b279e6f9e9908f4f38e"
+                },
+                "adapter": {
+                  "name": "vllm",
+                  "version": "0.4.2"
+                },
+                "started_at": "2026-11-03T11:39:23Z",
+                "finished_at": "2026-11-03T11:39:23Z",
+                "abort_reason": null
+              }
+            }
+          ]
+        },
+        {
+          "source_file": "sup08-code-selection-20261111.json",
+          "source_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+          "source_url": "references/evidence/sup08-code-selection-20261111.json",
+          "source_pointer": "/product_update/baseline",
+          "relationship": "부분 결과",
+          "observed_scope": "v0.7.0·v0.30.0·v0.31.0의 단일 모델 PoC에서 code 선택을 대조했다.",
+          "remaining_scope": "원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/product_update/baseline/security",
+              "value": "PASS"
+            },
+            {
+              "pointer": "/product_update/baseline/functional",
+              "value": "PASS"
+            }
+          ]
+        },
+        {
+          "source_file": "sup08-code-selection-20261111.json",
+          "source_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+          "source_url": "references/evidence/sup08-code-selection-20261111.json",
+          "source_pointer": "/standalone_controls/0",
+          "relationship": "부분 결과",
+          "observed_scope": "v0.7.0·v0.30.0·v0.31.0의 단일 모델 PoC에서 code 선택을 대조했다.",
+          "remaining_scope": "원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/standalone_controls/0/security",
+              "value": "PASS"
+            },
+            {
+              "pointer": "/standalone_controls/0/functional",
+              "value": "PASS"
+            }
+          ]
+        },
+        {
+          "source_file": "sup08-code-selection-20261111.json",
+          "source_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+          "source_url": "references/evidence/sup08-code-selection-20261111.json",
+          "source_pointer": "/standalone_controls/1",
+          "relationship": "부분 결과",
+          "observed_scope": "v0.7.0·v0.30.0·v0.31.0의 단일 모델 PoC에서 code 선택을 대조했다.",
+          "remaining_scope": "원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/standalone_controls/1/security",
+              "value": "PASS"
+            },
+            {
+              "pointer": "/standalone_controls/1/functional",
+              "value": "PASS"
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "code 선택 요청의 응답을 관측했으나 최종 소비를 확인하지 못한 UNKNOWN 기록을 유지한다. 원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-008",
+      "branch_index": 1,
+      "name": "요청의 코드 버전 변경으로 비승인 모듈 로딩",
+      "apply_when": "선정 멀티모달 processor와 trust-request-mm-kwargs 등 해당 opt-in이 실제 활성일 때만 추가한다. 실제 선택 processor·코드 판본·승인 대응을 확인한다.",
+      "branch_sha256": "7f4eb03ea9f5febac7cd1c87eab3d771513bc71a43bb00ba8536b8d25b197abe",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "sup08-code-selection-20261111.json",
+          "source_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+          "source_url": "references/evidence/sup08-code-selection-20261111.json",
+          "source_pointer": "/product_update/candidate",
+          "relationship": "부분 결과",
+          "observed_scope": "v0.7.0·v0.30.0·v0.31.0의 단일 모델 PoC에서 code 선택을 대조했다.",
+          "remaining_scope": "원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+          "original_statuses": [
+            {
+              "pointer": "/product_update/candidate/security",
+              "value": "FAIL"
+            },
+            {
+              "pointer": "/product_update/candidate/functional",
+              "value": "PASS"
+            }
+          ]
+        }
+      ],
+      "remaining_scope": "원문 ignored·consumed·rejected 및 PASS·FAIL을 각각 유지한다. DRAFT 정책의 선정 모델 결과로 전체 엔진 보호를 확정하지 않는다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-009",
+      "branch_index": 0,
+      "name": "모델에 포함된 비승인 Python 코드 실행",
+      "apply_when": "모델 추가 코드의 선택/금지·trust 설정과 실제 import 경로를 확인한다.",
+      "branch_sha256": "d68fc97e859f7a36fe589ca1b0704869298dbaff736c98636f4c4acc02e30ed0",
+      "status": "관련 관측",
+      "evidence": [
+        {
+          "source_file": "sup08-code-selection-20261111.json",
+          "source_sha256": "660bbbce01b1c4f0c8ae8bfd0c3779fbb6ce567667ce3fef5ed29255b3e03540",
+          "source_url": "references/evidence/sup08-code-selection-20261111.json",
+          "source_pointer": "/trust_disabled_030_evidence",
+          "relationship": "관련 관측",
+          "observed_scope": "신뢰 코드 비활성 조건에서 시작이 실패했다.",
+          "remaining_scope": "정상 요청이 실행되지 않아 승인 코드의 정상 처리와 비승인 코드 차단을 함께 확인하지 못했다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "정상 요청이 실행되지 않아 승인 코드의 정상 처리와 비승인 코드 차단을 함께 확인하지 못했다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-010",
+      "branch_index": 0,
+      "name": "플러그인 발견·허용 검사 차이로 비승인 실행",
+      "apply_when": "설치된 general·logits_processors와 실제 선택 io processor 등 그룹을 조사한다. 자동 발견·filter 적용 위치를 그룹별로 확인하며, VLLM_PLUGINS 하나로 모두 보호된다고 판단하지 않는다.",
+      "branch_sha256": "d769a1ceae891053f71e2fac865d6cdb346d159a62160e252030d37b18cd8fa0",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-010",
+      "branch_index": 1,
+      "name": "작업 거부 전에 플러그인 초기화 코드 실행",
+      "apply_when": "endpoint plugin이 설치·활성돼 실제 factory/등록 경로로 로딩된다.",
+      "branch_sha256": "b500124d8599060f5331a9f24f32ca2542d280b84b5478e98d9e4cf441df1736",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-011",
+      "branch_index": 0,
+      "name": "실행 모드 변경으로 코드 허용 검사 생략",
+      "apply_when": "선정 구현에 동적 import 소비 경로와 지원 Python 실행 모드가 있다.",
+      "branch_sha256": "ed7a0a588322e40f8942abb792ccb9d84b5c73cde9aa3e99958e1278dd85974f",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 0,
+      "name": "모델 파일 역직렬화로 비승인 코드 실행",
+      "apply_when": "선정 loader/reader가 파일·객체를 해석한다. serialized engine·pickle/cache는 해당 reader 사용 시 추가한다.",
+      "branch_sha256": "3c3be96854b8fd866fd581e3f86605d9ab63e5f93c27c656f6a6ad0b35eedf45",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 1,
+      "name": "자동 파일 선택으로 승인 밖 형식 로딩",
+      "apply_when": "기본 loader의 후보 형식·대체 파일 선택을 조사한다. 원격 취득·daemon 비사용만으로 제외하지 않는다.",
+      "branch_sha256": "b97c22e8f882fc5f8742417f3b01e79946f7e83fb2f5aa440359fa4e68174f30",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 2,
+      "name": "공유 공급 실패 뒤 승인 밖 파일로 전환",
+      "apply_when": "공유 weights daemon/공급원과 실제 fallback 분기가 선택된다.",
+      "branch_sha256": "683b155d667dd421a7e578e5cfdd5c179862dd2c078e7ad6adfab8369d267a73",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 3,
+      "name": "허용 client 메시지로 비허용 객체·명령 처리",
+      "apply_when": "별도 weights daemon의 실제 메시지·역직렬화 경로를 사용한다. 접근 가능한 peer/UID를 조사한다.",
+      "branch_sha256": "d9d3bb66c4fbdd6d459b190db32b73a7752ea1edf33a35d43c7952746b2bbdfe",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 4,
+      "name": "실제 미디어 형식과 decoder 선택",
+      "apply_when": "URL·data/base64·업로드·허용 로컬 파일에서 미디어 bytes를 해석하는 경로. 이미지·오디오·비디오별 실제 reader·의존성·외부 실행 프로그램과 fallback을 확인한다. weights reader와 따로 조사한다.",
+      "branch_sha256": "95f39d2b3d027c0c69215fe764441ec6b091817530b80f44c5198335dd047eeb",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-012",
+      "branch_index": 5,
+      "name": "공개 미디어 입력과 내부 SHM 객체 해석",
+      "apply_when": "공개 API나 분리형 generate가 받은 미디어 객체·직렬화 자료·참조가 내부 SHM 캐시와 worker reader로 전달되는 구성. 단순 내부 통신 비노출이나 insecure serialization 옵션 이름만으로 제외하지 않는다.",
+      "branch_sha256": "ac8e95cc983ef4799297f47459ccc34534759a266348e312d9e9dd4392ffa774",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-013",
+      "branch_index": 0,
+      "name": "모델 template의 위험 동작·비용 유발",
+      "apply_when": "서버 지정·processor/tokenizer·fallback 등 실제 선택된 공급 template가 renderer에서 소비된다.",
+      "branch_sha256": "589c01a36e8dd1b39348323e43c7316705fa130c0ba6772fda24eb093f02e090",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-014",
+      "branch_index": 0,
+      "name": "필수 검사 오류를 성공으로 처리해 비승인 사용",
+      "apply_when": "승인·배포에 필수 검사 결과를 사용한다. 검사 체계가 미정이면 확인 과제로 남긴다.",
+      "branch_sha256": "6008f1626641acdfa5cf802251132a113365d1658c9fbff42fb14f59226052b7",
+      "status": "부분 결과",
+      "evidence": [
+        {
+          "source_file": "AWS_GPU_서버2회차_결과_20261104.md",
+          "source_sha256": "129680bd3efd9d8cfcbfa6ce124c6a0f52201b1af7cee95a574d3e6004d28d9b",
+          "source_url": "references/evidence/AWS_GPU_서버2회차_결과_20261104.md",
+          "source_pointer": "AWS-13",
+          "relationship": "부분 결과",
+          "observed_scope": "잘못된 bundle 해시의 시작 거부를 관측했다.",
+          "remaining_scope": "필수 검사별 오류·근거 누락의 보류와 정상 사용을 추가 확인해야 한다.",
+          "original_statuses": []
+        }
+      ],
+      "remaining_scope": "필수 검사별 오류·근거 누락의 보류와 정상 사용을 추가 확인해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-015",
+      "branch_index": 0,
+      "name": "구버전 생성물 재사용으로 실행 불일치",
+      "apply_when": "파생/compiled/npcache를 재사용한다. 모델·도구·옵션별 호환 문맥을 확인한다.",
+      "branch_sha256": "a6ef22092e38d043716b7ccad90515755baf49414b9f0513b1c107139319f045",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-016",
+      "branch_index": 0,
+      "name": "중단된 컴파일 결과를 정상 생성물로 사용",
+      "apply_when": "취득·변환·compile 등 생성 도중 중단과 잔존 파일의 재사용 경로가 있다.",
+      "branch_sha256": "77acbf70e450c2cddfd83d9159b9a1d0d7eb36a5f5e87e194df180c8012455f8",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-016",
+      "branch_index": 1,
+      "name": "부분 다운로드를 완성본으로 사용",
+      "apply_when": "취득·생성의 부분 파일을 저장하고 후속 실행에서 cache/완료 자료로 읽을 수 있다.",
+      "branch_sha256": "d30ae5ecdf199e29e6863bed9f159828f74272bef9069a2ec5ad4d6ab24e0bf5",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-017",
+      "branch_index": 0,
+      "name": "공지의 실제 구성 적용 여부",
+      "apply_when": "반입·운영·변경 대상의 구성과 관련 공지가 있다.",
+      "branch_sha256": "3ef105aa04ec869f982c916faf8bff77bdd2f982d30ae6b4d3fee04e303bf704",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    },
+    {
+      "check_id": "CHK-SUP-017",
+      "branch_index": 1,
+      "name": "수정·보완 조치의 실제 효과",
+      "apply_when": "영향을 받는 취약점에 수정·백포트·보완 조치를 적용한다.",
+      "branch_sha256": "7061b105dc326d8b3341a84c5246cb88dc5862aeeb655941dd565c02bdc02df2",
+      "status": "실행 결과 미연결",
+      "evidence": [],
+      "remaining_scope": "이 분기의 성립 조건에서 허용·금지 동작과 필수 관측을 확인한 결과를 확보해야 한다.",
+      "current_check_accepted": false
+    }
+  ],
+  "check_level_observations": [
+    {
+      "check_id": "CHK-REQ-014",
+      "source_file": "engine-callback-cpu-20261102.json",
+      "source_sha256": "a6aebbaf5321bdd38dec5141e41ea171cb54c02bfdbeceaf2e95721b35a07bfe",
+      "source_url": "references/evidence/engine-callback-cpu-20261102.json",
+      "source_pointer": "/results/0",
+      "relationship": "관련 관측",
+      "observed_scope": "CPU 단일 실행에서 배치 경계를 일부 관측했다.",
+      "remaining_scope": "중간 tensor·세대 계보가 없고 worker 침해·전송 변조·PD 참조 시험과 직접 맞지 않아 항목의 공통 관측으로 보관한다.",
+      "original_statuses": [
+        {
+          "pointer": "/results/0/status",
+          "value": "COMPLETED"
+        },
+        {
+          "pointer": "/results/0/full_scope",
+          "value": false
+        },
+        {
+          "pointer": "/results/0/normal",
+          "value": true
+        },
+        {
+          "pointer": "/results/0/facts/full_scope",
+          "value": false
+        }
+      ]
+    }
+  ]
+}
