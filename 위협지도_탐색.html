@@ -235,7 +235,7 @@ caller:'사용자나 호출 앱이 요청을 만들고 응답을 받는 위치�
 function focusContext(){if(restoring)return;requestAnimationFrame(()=>{if(matchMedia('(max-width:800px)').matches)$(state.listOpen?'view-list':'results').scrollIntoView({block:'start',behavior:reduced()?'auto':'smooth'});else $('results').scrollTop=0;});}
 function snapshot(){return {...state,focus:state.focus?{...state.focus}:null};}
 function remember(){modeMemory[state.view]=snapshot();}
-function writeRoute(){if(restoring)return;remember();let root=state.id||'',p=new URLSearchParams();if(state.focus)p.set(state.focus.kind,state.focus.id);if(state.actorOrigin)p.set('origin',state.actorOrigin);if(state.observedEdge)p.set('observe',state.observedEdge);if(state.scopeNode)p.set('scope',state.scopeNode);if(state.caseId)p.set('case',state.caseId);if(viewCheckId)p.set('check',viewCheckId);if(state.all)p.set('all','1');if(state.view!=='structure'&&state.listOpen)p.set('list','1');if(state.listFilter)p.set('filter',state.listFilter.id);let hash=root?('#'+root+(p.size?'&'+p.toString():'')):(p.size?'#structure&'+p.toString():'');if(embedded){if(embeddedHash!==hash){embeddedHash=hash;parent.postMessage({type:'bbls-explorer:state',hash},'*');}}else if(location.hash!==hash)history.pushState(null,'',location.pathname+location.search+hash);}
+function writeRoute(){if(restoring)return;remember();let root=state.id||'',p=new URLSearchParams();if(state.focus)p.set(state.focus.kind,state.focus.id);if(state.actorOrigin)p.set('origin',state.actorOrigin);if(state.observedEdge)p.set('observe',state.observedEdge);if(state.scopeNode)p.set('scope',state.scopeNode);if(state.caseId)p.set('case',state.caseId);if(persistentFilter?.kind==='check')p.set('check',persistentFilter.id);if(persistentFilter?.kind==='scenario')p.set('scenario',persistentFilter.id);if(state.all)p.set('all','1');if(state.view!=='structure'&&state.listOpen)p.set('list','1');if(state.listFilter)p.set('filter',state.listFilter.id);let hash=root?('#'+root+(p.size?'&'+p.toString():'')):(p.size?'#structure&'+p.toString():'');if(embedded){if(embeddedHash!==hash){embeddedHash=hash;parent.postMessage({type:'bbls-explorer:state',hash},'*');}}else if(location.hash!==hash)history.pushState(null,'',location.pathname+location.search+hash);}
 function switchView(view){remember();const saved=modeMemory[view];restoring=true;try{if(view==='structure'){state.view='structure';state.focus=null;state.caseId=null;state.actorOrigin=null;state.observedEdge=null;state.scopeNode=null;if(saved?.kind){select(saved.kind,saved.id,false);state.all=saved.all;paint();}else{state.kind=null;state.id=null;state.all=saved?.all||false;$('results').hidden=true;paint();}}else{selectViewItem(view,saved?.id||viewTables[view][0].id,saved?.scopeNode||null);if(saved){state.actorOrigin=saved.actorOrigin;state.observedEdge=saved.observedEdge;state.focus=saved.focus;state.caseId=null;state.all=saved.all;syncPickers();paint();renderContext();if(saved.caseId)showContextCase(saved.caseId);}}}finally{restoring=false;}state.listOpen=view!=='structure';state.listFilter=null;syncListView();writeRoute();focusContext();}
 function syncPickers(){if($('actor-origin'))$('actor-origin').value=state.actorOrigin||'';if($('observer-edge'))$('observer-edge').value=state.observedEdge||'';}
 function clearInspection(){state.listOpen=false;state.focus=null;state.caseId=null;state.all=false;state.boundaries=false;paint();renderContext();writeRoute();focusContext();}
@@ -525,17 +525,12 @@ const scenarioSearchRows=[...scenarios.values()].sort((a,b)=>a.id.localeCompare(
 function renderScenarioMatches(){
  const terms=$('scenario-map-query').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean),rows=scenarioSearchRows.filter(r=>terms.every(t=>r.text.includes(t)));
  $('scenario-map-count').textContent=(terms.length?'검색 결과 ':'전체 ')+rows.length+'개';
- $('scenario-map-matches').innerHTML=rows.map(r=>`<li><button type="button" data-find-scenario="${esc(r.id)}" aria-pressed="${state.kind==='scenario'&&state.id===r.id}"><strong>${esc(r.id)}</strong><span>${esc(r.title)}<small>${esc(r.description)}</small></span></button></li>`).join('')||'<li class="view-note">다른 검색어로 찾아보세요. 체크리스트 번호로도 검색할 수 있습니다.</li>';
+ $('scenario-map-matches').innerHTML=rows.map(r=>`<li><button type="button" data-find-scenario="${esc(r.id)}" aria-pressed="${persistentFilter?.kind==='scenario'&&persistentFilter.id===r.id}"><strong>${esc(r.id)}</strong><span>${esc(r.title)}<small>${esc(r.description)}</small></span></button></li>`).join('')||'<li class="view-note">다른 검색어로 찾아보세요. 체크리스트 번호로도 검색할 수 있습니다.</li>';
 }
 function positionScenarioFinder(){const menu=scenarioFinder.querySelector('.check-finder-body');menu.style.left=Math.min(0,innerWidth-16-scenarioFinder.getBoundingClientRect().left-Math.min(480,innerWidth-32))+'px';}
 scenarioFinder.addEventListener('toggle',()=>{if(scenarioFinder.open){checkFinder.open=false;renderScenarioMatches();positionScenarioFinder();$('scenario-map-query').focus({preventScroll:true});}});
 $('scenario-map-query').addEventListener('input',()=>{renderScenarioMatches();positionScenarioFinder();});
-scenarioFinder.addEventListener('click',e=>{const choice=e.target.closest('[data-find-scenario]');if(!choice)return;
- const priorCheck=state.kind==='check'?state.id:null;viewCheckId=null;
- Object.assign(state,{view:'structure',listOpen:false,listFilter:null,focus:null,caseId:null,actorOrigin:null,observedEdge:null,scopeNode:null});
- structureSelectedNode=null;structureSelectedEdge=null;checkScenarioReturnId=priorCheck&&checkRelations.get(priorCheck)?.scenarioIds.includes(choice.dataset.findScenario)?priorCheck:null;
- select('scenario',choice.dataset.findScenario);scenarioFinder.open=false;focusStructureTree();
-});
+scenarioFinder.addEventListener('click',e=>{const choice=e.target.closest('[data-find-scenario]');if(!choice)return;activateScenarioFilter(choice.dataset.findScenario);scenarioFinder.open=false;});
 scenarioFinder.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();scenarioFinder.open=false;scenarioFinder.querySelector('summary').focus();}else if(e.key==='ArrowDown'&&e.target===$('scenario-map-query')){e.preventDefault();$('scenario-map-matches').querySelector('button')?.focus();}});
 document.addEventListener('click',e=>{if(scenarioFinder.open&&!scenarioFinder.contains(e.target))scenarioFinder.open=false;});
 scenarioFinder.addEventListener('focusout',e=>{if(e.relatedTarget&&!scenarioFinder.contains(e.relatedTarget))scenarioFinder.open=false;});
@@ -571,6 +566,86 @@ route=function(){const params=new URLSearchParams((embedded?embeddedHash:locatio
 const checkViewAllActors=allActorsButton.onclick;
 allActorsButton.onclick=()=>{viewCheckId=null;checkViewAllActors();};
 
+// Keep the filter independent of the current tab and inspected diagram location.
+let persistentFilter=null,filterTransition=false;
+function filterRelation(){
+ if(!persistentFilter)return null;
+ if(persistentFilter.kind==='check')return checkRelations.get(persistentFilter.id)||null;
+ const s=scenarios.get(persistentFilter.id);if(!s)return null;
+ const nodeIds=scNodes(s),edgeIds=new Set(G.edges.filter(e=>nodeIds.has(e.source)&&nodeIds.has(e.target)).map(e=>e.id));
+ return {nodeIds,edgeIds,boundaryIds:new Set(scBoundaries(s)),scenarioIds:[s.id],assets:V.assets.filter(a=>(D.explorer_links.asset[a.id]||[]).includes(s.id))};
+}
+function persistentRows(view){
+ const r=filterRelation();if(!r)return null;
+ if(view==='asset')return V.assets.filter(a=>r.assets.some(x=>x.id===a.id));
+ if(view==='boundary')return V.boundaries.filter(b=>r.boundaryIds.has(b.id));
+ return V.actors.filter(a=>a.id===allActorsId||r.scenarioIds.some(sid=>(D.explorer_links.actor[a.id]||[]).includes(sid)));
+}
+const filterStatus=document.createElement('div');filterStatus.id='map-active-filter';filterStatus.setAttribute('role','status');filterStatus.setAttribute('aria-live','polite');filterStatus.hidden=true;document.querySelector('.graph-tools').after(filterStatus);
+function clearPersistentFilter(){
+ persistentFilter=null;viewCheckId=null;checkScenarioReturnId=null;
+ if(['check','scenario'].includes(state.kind)){state.kind=null;state.id=null;state.caseId=null;structureSelectedNode=null;structureSelectedEdge=null;}
+ if(state.view!=='structure')state.listOpen=true;
+ paint();writeRoute();
+}
+function syncFilterStatus(){
+ const f=persistentFilter,r=filterRelation();filterStatus.hidden=!f||!r;
+ if(f&&r){const title=f.kind==='check'?(D.check_reader[f.id]?.question||checks.get(f.id)?.question):(D.scenario_reader[f.id]?.title||scenarios.get(f.id)?.title);filterStatus.innerHTML='<div><strong>'+esc(f.kind==='check'?'선택한 체크리스트':'선택한 시나리오')+' · '+esc(f.id)+'</strong><p>'+esc(title)+'</p></div><button type="button" id="clear-map-filter">필터 해제</button>';$('clear-map-filter').onclick=clearPersistentFilter;filterStatus.dataset.kind=f.kind;filterStatus.dataset.id=f.id;}
+ else{filterStatus.replaceChildren();delete filterStatus.dataset.kind;delete filterStatus.dataset.id;}
+ checkFinder.querySelector(':scope > summary').textContent='체크리스트 찾기'+(f?.kind==='check'?' · '+f.id:'');
+ scenarioFinder.querySelector(':scope > summary').textContent='시나리오 찾기'+(f?.kind==='scenario'?' · '+f.id:'');
+ if(scenarioFinder.open)renderScenarioMatches();if(checkFinder.open)renderCheckMatches();
+ if(!r){for(const n of document.querySelectorAll('.filter-related'))n.classList.remove('filter-related');return;}
+ for(const n of document.querySelectorAll('[data-node]')){const yes=r.nodeIds.has(n.dataset.node),inspected=(state.kind==='node'&&state.id===n.dataset.node)||(state.focus?.kind==='node'&&state.focus.id===n.dataset.node);n.classList.toggle('filter-related',yes);n.classList.toggle('dim',!yes&&!inspected);n.setAttribute('aria-pressed',String(yes||inspected));}
+ for(const n of document.querySelectorAll('[data-edge]')){const yes=r.edgeIds.has(n.dataset.edge),inspected=(state.kind==='edge'&&state.id===n.dataset.edge)||(state.focus?.kind==='edge'&&state.focus.id===n.dataset.edge);n.classList.toggle('filter-related',yes);n.classList.toggle('dim',!yes&&!inspected);}
+ const allowed=new Set(r.scenarioIds);
+ for(const n of structureTree.querySelectorAll('[data-tree-scenario]'))n.hidden=!allowed.has(n.dataset.treeScenario);
+ for(const n of structureTree.querySelectorAll('.structure-mechanism')){const all=[...n.querySelectorAll('[data-tree-scenario]')],visible=all.filter(x=>!x.hidden);const summary=n.querySelector(':scope > summary');if(!summary.dataset.originalLabel)summary.dataset.originalLabel=summary.textContent;n.hidden=!visible.length;summary.textContent=summary.dataset.originalLabel.replace(/ · \d+개$/,' · '+visible.length+'개');}
+ $('graph-summary').textContent=f.id+' · '+(state.focus?.kind==='edge'?edges.get(state.focus.id).label:state.focus?.kind==='node'?nodes.get(state.focus.id).label:state.kind==='node'?nodes.get(state.id).label:state.kind==='edge'?edges.get(state.id).label:'관련 위치와 연결');
+}
+const persistentEligible=eligibleRows;eligibleRows=function(){const rows=persistentEligible(),allowed=persistentRows(state.view);if(!allowed)return rows;const ids=new Set(allowed.map(r=>r.id));return rows.filter(r=>ids.has(r.id));};
+const persistentCandidates=contextCandidates;contextCandidates=function(){const ids=persistentCandidates(),r=filterRelation();return r?ids.filter(id=>r.scenarioIds.includes(id)):ids;};
+const persistentEdges=baseRelatedEdges;baseRelatedEdges=function(){const r=filterRelation();if(!r)return persistentEdges();const ids=new Set(r.edgeIds);if(state.focus?.kind==='edge')ids.add(state.focus.id);if(state.kind==='edge')ids.add(state.id);return ids;};
+const persistentNodes=selectedNodes;selectedNodes=function(){const r=filterRelation();return r&&state.listOpen?new Set(r.nodeIds):persistentNodes();};
+const persistentOverlay=drawModeOverlay;drawModeOverlay=function(ns){if(persistentFilter&&state.listOpen){for(const svg of document.querySelectorAll('.map-svg')){svg.querySelector('.mode-overlay').replaceChildren();delete svg.dataset.actorOverview;for(const g of svg.querySelectorAll('.component')){g.classList.remove('actor-origin');g.querySelector('image').setAttribute('href',D.icon_assets[nodes.get(g.dataset.node).icon]);}}return;}persistentOverlay(ns);};
+const persistentPaint=paint;paint=function(){persistentPaint();if(!persistentFilter){for(const n of structureTree.querySelectorAll('[data-tree-scenario],.structure-mechanism'))n.hidden=false;for(const n of structureTree.querySelectorAll('.structure-mechanism > summary'))if(n.dataset.originalLabel)n.textContent=n.dataset.originalLabel;}syncFilterStatus();};
+finderSelectedCheck=function(){return persistentFilter?.kind==='check'?persistentFilter.id:null;};
+function activateScenarioFilter(id){
+ if(!scenarios.has(id))return false;
+ const prior=persistentFilter?.kind==='check'?persistentFilter.id:null;
+ persistentFilter={kind:'scenario',id};viewCheckId=null;
+ state.focus=null;state.caseId=null;state.listFilter=null;state.scopeNode=null;
+ checkScenarioReturnId=prior&&checkRelations.get(prior)?.scenarioIds.includes(id)?prior:null;
+ if(state.view==='structure'){select('scenario',id);focusStructureTree();}
+ else{state.listOpen=true;paint();writeRoute();focusContext();}
+ return true;
+}
+showCheckOverview=function(id){
+ if(!checkRelations.has(id))return false;
+ if(!filterTransition&&!restoring)persistentFilter={kind:'check',id};
+ viewCheckId=null;
+ if(state.view==='structure')return checkViewShow(id);
+ state.listOpen=true;state.listFilter=null;state.focus=null;state.caseId=null;state.scopeNode=null;state.boundaries=false;$('check-map-query').value='';paint();writeRoute();return true;
+};
+const persistentSelect=select;select=function(kind,id,scroll=true){if(kind==='scenario'&&scenarios.has(id)&&!filterTransition&&!restoring)persistentFilter={kind:'scenario',id};return persistentSelect(kind,id,scroll);};
+const persistentShowScenario=showScenario;showScenario=function(id,updateGraph=true){if(scenarios.has(id)&&!filterTransition&&!restoring)persistentFilter={kind:'scenario',id};const ret=persistentShowScenario(id,updateGraph);syncFilterStatus();return ret;};
+const persistentContextCase=showContextCase;showContextCase=function(id){if(scenarios.has(id)&&!filterTransition&&!restoring)persistentFilter={kind:'scenario',id};return persistentContextCase(id);};
+const persistentSwitch=switchView;switchView=function(view){
+ const keep=persistentFilter;filterTransition=true;viewCheckId=null;
+ try{persistentSwitch(view);persistentFilter=keep;viewCheckId=null;
+  if(view==='structure'&&keep&&(!state.kind||state.kind==='check'&&!(keep.kind==='check'&&keep.id===state.id))){if(keep.kind==='check')checkViewShow(keep.id);else persistentSelect('scenario',keep.id,false);}
+  if(view==='structure'&&!keep&&['check','scenario'].includes(state.kind)){state.kind=null;state.id=null;}
+ }finally{filterTransition=false;}
+ paint();writeRoute();
+};
+const persistentRoute=route;route=function(){
+ const [root,...rest]=(embedded?embeddedHash:location.hash).slice(1).split('&'),p=new URLSearchParams(rest.join('&'));
+ const sid=p.get('scenario'),cid=p.get('check');
+ persistentFilter=scenarios.has(sid)?{kind:'scenario',id:sid}:checks.has(cid)?{kind:'check',id:cid}:scenarios.has(root)?{kind:'scenario',id:root}:checks.has(root)?{kind:'check',id:root}:null;
+ filterTransition=true;try{persistentRoute();viewCheckId=null;}finally{filterTransition=false;}paint();
+};
+const persistentReset=$('reset').onclick;$('reset').onclick=()=>{persistentFilter=null;viewCheckId=null;persistentReset();paint();writeRoute();};
+
 window.addEventListener('hashchange',route);window.addEventListener('popstate',route);paint();route();
 })();
 </script></body></html>
@@ -602,4 +677,4 @@ window.addEventListener('hashchange',route);window.addEventListener('popstate',r
  window.addEventListener('message',e=>{if(e.source!==parent||e.data?.type!=='bbls-explorer:scenario')return;const d=waiting.get(e.data.requestId);if(!d||d.dataset.scenario!==e.data.id)return;waiting.delete(e.data.requestId);const b=document.createElement('div');b.className='map-evidence-body';b.innerHTML=e.data.html;b.querySelector('.scenario-full-view')?.remove();for(const a of b.querySelectorAll('a[href^="#"]')){if(a.href.includes('doc=')&&!a.getAttribute('href').includes(encodeURIComponent('부록_B_위협과_시나리오.md')))a.href=new URL('index.html'+a.getAttribute('href'),location.href).href;}d.append(b);d.dataset.loaded='true';});
  new MutationObserver(rs=>{for(const r of rs)for(const n of r.addedNodes)if(n.nodeType===1&&n.isConnected)update(n.parentElement||n);}).observe(document.body,{childList:true,subtree:true});update(document.body);
 })();
-</script>
+</script><style id="map-persistent-filter-style">#map-active-filter{display:flex;gap:16px;align-items:center;justify-content:space-between;border:1px solid #cbd5df;border-radius:8px;padding:12px 16px;margin:12px 0 18px;background:#fff}#map-active-filter[hidden]{display:none}#map-active-filter strong{color:#10274c;font-size:14px}#map-active-filter p{margin:4px 0 0;font-size:13px;line-height:1.6;color:#475b72}#map-active-filter button{white-space:nowrap;font-size:13px}.component.filter-related .selection-ring{stroke:#087f87;stroke-width:2.4}.edge.filter-related .edge-line{filter:drop-shadow(0 0 1px #087f87)}@media(max-width:600px){#map-active-filter{align-items:start;padding:10px;gap:8px}#map-active-filter button{padding:7px}}</style>
