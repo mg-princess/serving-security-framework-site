@@ -1,5 +1,5 @@
 {
-  "source": "생애주기별 실행·점검",
+  "source": "생애주기별 보안 요구사항과 점검",
   "schema": "byuljari.lifecycle-checklist.v1",
   "isms_p_notes": {
     "baseline": "ISMS-P 인증기준 안내서(2023.11)",
