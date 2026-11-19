@@ -396,19 +396,19 @@ function readerLifecycleItem(item){
  const changeReview=readerChangeReview(item,verification.changeReview);
  const refs=item.refs.map(id=>{
   const itemVerification=verification.checks[id];
-  const conditional=readerConditionalParents[id]?' <small>· 조건부 하위시험</small>':'';
-  const method='<p>'+esc(itemVerification.method)+'</p>';
   const advisories=(itemVerification.advisories||[]).map(a=>
    '<li><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.id)+'</a> · '+esc(a.title)+' — '+esc(a.reason)+'</li>').join('');
-  return '<li>'+readerLink('checks',{id},readerChecks.get(id).title)+conditional+method+
-   (advisories?'<details><summary>관련 공개 취약점</summary><ul>'+advisories+'</ul></details>':'')+'</li>';
+  const introHtml='<p>'+esc(itemVerification.method)+'</p>'
+   +(advisories?'<details><summary>관련 공개 취약점</summary><ul>'+advisories+'</ul></details>':'');
+  const when=readerConditionalParents[id]?'조건부 하위시험':'';
+  return readerCheckDisclosure({id,when,introHtml},'lifecycle-'+item.id,true);
  }).join('');
  const guidance=(item.links||[]).map(link=>readerLink('lifecycle',{stage:link.stage,anchor:link.anchor},link.label)).join(' · ');
  const references=(item.references||[]).map(({view,label,...params})=>readerLink(view,params,label)).join(' · ');
  return '<li class="lifecycle-question" id="'+readerLifecycleQuestion(item)+'"><p><strong>'+esc(item.question)+'</strong></p>'
   +'<details><summary>확인 방법</summary><p>'+esc(item.evidence)+'</p>'+(extra?'<p>'+esc(extra)+'</p>':'')+changeReview+(item.example&&item.id!==verification.changeReview.verify?'<p><strong>예시</strong> '+esc(item.example)+'</p>':'')+(references?'<p><strong>참고</strong> '+references+'</p>':'')+(guidance?'<p>'+guidance+'</p>':'')
   +(fields.length?'<p><strong>보호 분야</strong> '+fields.map(n=>esc(readerFields[n-1].name)).join(' · ')+'</p>':'')
-  +(refs?'<p><strong>세부 점검별 확인 내용</strong></p><p>이 배포에 적용되는 조건을 골라 연결된 시험과 판정 기준을 확인한다. 공개 취약점은 제품·버전·기능이 맞는지 공지 원문과 대조한다.</p><ul class="lifecycle-check-links">'+refs+'</ul>':'')+'</details></li>';
+  +(refs?'<p><strong>세부 점검별 확인 내용</strong></p><p>이 배포에 적용되는 조건을 골라 연결된 시험과 판정 기준을 확인한다. 공개 취약점은 제품·버전·기능이 맞는지 공지 원문과 대조한다.</p><div class="lifecycle-checks">'+refs+'</div>':'')+'</details></li>';
 }
 function readerLifecyclePage(stage){
  if(!stage){
@@ -667,7 +667,7 @@ function readerOpenInlineCheck(a,id){
  let details=readerInlineChecks.get(a);if(details&&details.isConnected){details.open=!details.open;return;}
  const holder=readerDocBox(readerWorkflowChecklist([{id}],'inline-'+(++readerPanelSeq),false,readerCurrent.mode==='lifecycle'));details=holder.querySelector('.guide-check');details.classList.add('inline-check');
  const row=a.closest('tr');if(row){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=row.cells.length;td.append(details);tr.append(td);row.after(tr);}
- else {const block=a.closest('p,li,h3,h4,h5')||a;if(block.matches('.lifecycle-check-links > li'))block.append(details);else block.after(details);}
+ else {const block=a.closest('p,li,h3,h4,h5')||a;block.after(details);}
  readerInlineChecks.set(a,details);readerHydrateCheck(details);details.open=true;
 }
 function readerOpenInline(a,source){
@@ -737,13 +737,19 @@ function readerHydrateCheck(details){
 }
 document.addEventListener('toggle',e=>{if(e.target.matches?.('.guide-check[open]'))readerHydrateCheck(e.target);},true);
 document.addEventListener('click',e=>{const summary=e.target.closest('.guide-check > summary');if(summary)readerHydrateCheck(summary.parentElement);});
+function readerCheckDisclosure(ref,key,titleFirst){
+ const c=readerChecks.get(ref.id);if(!c)throw Error('Unknown checklist in workflow: '+ref.id);
+ const title=c.title.replace(/^\d+(?:\.\d+)+\s*/,'');
+ return '<details class="guide-check" id="guide-check-'+key+'-'+ref.id+'" data-check-id="'+ref.id+'"><summary>'
+  +(titleFirst?'<strong>'+esc(title)+'</strong>':'<strong>'+esc(ref.id)+'</strong> · '+esc(title))
+  +(ref.when?'<span class="guide-check-when">'+esc(ref.when)+'</span>':'')+'</summary>'
+  +(ref.contextHtml?'<div class="check-stage-note"><strong>이 시점에서 확인할 일</strong>'+ref.contextHtml+'</div>':'')
+  +'<div class="guide-check-body">'+(ref.introHtml||'')+'</div></details>';
+}
 function readerWorkflowChecklist(refs,key,heading=true,titleFirst=false){
  if(!refs?.length)return '';
- return '<section class="guide-work-checks">'+(heading?'<h4>확인할 체크리스트</h4>':'')+[...refs].sort(readerCompareChecks).map(ref=>{
-  const c=readerChecks.get(ref.id);if(!c)throw Error('Unknown checklist in workflow: '+ref.id);
-  const title=c.title.replace(/^\d+(?:\.\d+)+\s*/,'');
-  return '<details class="guide-check" id="guide-check-'+key+'-'+ref.id+'" data-check-id="'+ref.id+'"><summary>'+(titleFirst?'<strong>'+esc(title)+'</strong>':'<strong>'+esc(ref.id)+'</strong> · '+esc(title))+(ref.when?'<span class="guide-check-when">'+esc(ref.when)+'</span>':'')+'</summary>'+(ref.contextHtml?'<div class="check-stage-note"><strong>이 시점에서 확인할 일</strong>'+ref.contextHtml+'</div>':'')+'<div class="guide-check-body"></div></details>';
- }).join('')+'</section>';
+ return '<section class="guide-work-checks">'+(heading?'<h4>확인할 체크리스트</h4>':'')
+  +[...refs].sort(readerCompareChecks).map(ref=>readerCheckDisclosure(ref,key,titleFirst)).join('')+'</section>';
 }
 // Workflows are immutable during a reader session. Reuse the resolved groups
 // across selection, approval and handoff instead of traversing the graph again.
@@ -975,8 +981,6 @@ window.addEventListener('message',e=>{
 .protection-example th[scope="row"] { white-space: nowrap; }
 
 /* Keep the title distinct from the opened check text. */
-#content .lifecycle-check-links { padding-inline-start: 1.25rem; font-weight: 400; }
-#content .lifecycle-check-links > li { min-width: 0; }
 #content .guide-check > summary, #content .guide-check > summary > strong { font-weight: 600; }
 #content .guide-check-body { min-width: 0; font-weight: 400; overflow-wrap: anywhere; }
 #content .guide-check-body .check-detail-table td { font-weight: 400; }
