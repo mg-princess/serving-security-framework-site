@@ -409,7 +409,7 @@ const checkOverviewPaint=paint;paint=function(){
 
 // A compact entry point; full checklist content stays lazy and comes from the reader.
 const checkFinder=document.createElement('details');checkFinder.id='check-map-finder';
-checkFinder.innerHTML='<summary>체크리스트 찾기</summary><div class="check-finder-body"><label for="check-map-query">항목 번호·내용 검색</label><input id="check-map-query" type="search" placeholder="CHK-REQ-016 또는 캐시" autocomplete="off"><p id="check-map-match-count" role="status" aria-live="polite"></p><ul id="check-map-matches" aria-label="체크리스트 검색 결과"></ul></div>';
+checkFinder.innerHTML='<summary>체크리스트 찾기</summary><div class="check-finder-body"><label for="check-map-query">항목 번호·내용 검색</label><input id="check-map-query" type="search" placeholder="CHK-REQ-016 또는 캐시" autocomplete="off"><p id="check-map-match-count" role="status" aria-live="polite"></p><ul id="check-map-matches" aria-label="체크리스트 검색 결과"></ul><p>추가 배포 점검 · <a data-engine-advisory-check="CHK-LIF-017" href="./index.html#view=checks&amp;id=CHK-LIF-017">P2P 피어 세션</a> · <a data-engine-advisory-check="CHK-SUP-018" href="./index.html#view=checks&amp;id=CHK-SUP-018">FIPS 적용 구성</a></p></div>';
 document.querySelector('.graph-tools').prepend(checkFinder);
 function updateFinderLabel(){checkFinder.querySelector(':scope > summary').textContent='체크리스트 찾기'+(finderSelectedCheck()?' · '+finderSelectedCheck():'');}
 function renderCheckMatches(){
@@ -679,6 +679,12 @@ window.addEventListener('hashchange',route);window.addEventListener('popstate',r
 })();
 
 document.addEventListener('click',event=>{
+ const supplemental=event.target.closest('[data-engine-advisory-check]');
+ if(supplemental&&window.parent!==window){
+  event.preventDefault();
+  window.parent.postMessage({type:'bbls-explorer:supplemental-check',id:supplemental.dataset.engineAdvisoryCheck},'*');
+  return;
+ }
  const link=event.target.closest('.check-detail-profile-prompt a');
  if(!link)return;
  event.preventDefault();
